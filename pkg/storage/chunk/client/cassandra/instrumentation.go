@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/gocql/gocql"
+	"github.com/grafana/gocql"
 	"github.com/prometheus/client_golang/prometheus"
 
 	"github.com/grafana/loki/v3/pkg/util/constants"

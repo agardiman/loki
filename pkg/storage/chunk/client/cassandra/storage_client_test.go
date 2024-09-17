@@ -3,7 +3,7 @@ package cassandra
 import (
 	"testing"
 
-	"github.com/gocql/gocql"
+	"github.com/grafana/gocql"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 

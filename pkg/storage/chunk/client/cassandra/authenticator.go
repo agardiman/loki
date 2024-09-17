@@ -3,7 +3,7 @@ package cassandra
 import (
 	"fmt"
 
-	"github.com/gocql/gocql"
+	"github.com/grafana/gocql"
 )
 
 // CustomPasswordAuthenticator provides the default behaviour for Username/Password authentication with

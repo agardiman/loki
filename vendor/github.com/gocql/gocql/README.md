@@ -126,7 +126,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gocql/gocql"
+	"github.com/grafana/gocql"
 )
 
 func main() {
