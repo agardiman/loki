@@ -9,12 +9,12 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/metadata"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
-	"github.com/grafana/loki/v3/pkg/util/math"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/metadata"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
+	"github.com/agardiman/loki/v3/pkg/util/math"
 )
 
 // NewBufferedAccumulator returns an accumulator which aggregates all query

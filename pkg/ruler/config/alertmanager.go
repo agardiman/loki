@@ -7,7 +7,7 @@ import (
 	"github.com/grafana/dskit/crypto/tls"
 	"github.com/prometheus/prometheus/model/relabel"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 type AlertManagerConfig struct {

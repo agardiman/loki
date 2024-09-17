@@ -17,17 +17,17 @@ import (
 	"github.com/prometheus/prometheus/promql"
 	"google.golang.org/grpc/codes"
 
-	"github.com/grafana/loki/v3/pkg/loghttp"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/logql/sketch"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
-	"github.com/grafana/loki/v3/pkg/querier/plan"
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase"
-	"github.com/grafana/loki/v3/pkg/util/httpreq"
-	"github.com/grafana/loki/v3/pkg/util/querylimits"
-	"github.com/grafana/loki/v3/pkg/util/server"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/logql/sketch"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/querier/plan"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase"
+	"github.com/agardiman/loki/v3/pkg/util/httpreq"
+	"github.com/agardiman/loki/v3/pkg/util/querylimits"
+	"github.com/agardiman/loki/v3/pkg/util/server"
 )
 
 const (

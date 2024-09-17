@@ -9,8 +9,8 @@ import (
 	"github.com/oklog/ulid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 func Benchmark_metastoreState_applyAddBlock(t *testing.B) {

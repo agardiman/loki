@@ -9,11 +9,11 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
-	"github.com/grafana/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
 )
 
 func MustParseDayTime(s string) config.DayTime {

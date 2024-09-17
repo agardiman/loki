@@ -19,7 +19,7 @@ import (
 	promRules "github.com/prometheus/prometheus/rules"
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/grafana/loki/v3/pkg/ruler/rulespb"
+	"github.com/agardiman/loki/v3/pkg/ruler/rulespb"
 )
 
 type DefaultMultiTenantManager struct {

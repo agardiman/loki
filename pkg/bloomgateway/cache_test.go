@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/querier/plan"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
-	"github.com/grafana/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/querier/plan"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
 )
 
 // Range is 1000-4000

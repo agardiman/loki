@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
 )
 
 func TestShardString(t *testing.T) {

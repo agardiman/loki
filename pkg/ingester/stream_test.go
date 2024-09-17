@@ -14,21 +14,21 @@ import (
 	gokitlog "github.com/go-kit/log"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/pkg/runtime"
+	"github.com/agardiman/loki/v3/pkg/runtime"
 
 	"github.com/grafana/dskit/httpgrpc"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	"github.com/grafana/loki/v3/pkg/distributor/writefailures"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/log"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/util/flagext"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/distributor/writefailures"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/util/flagext"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 var (

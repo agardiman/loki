@@ -11,7 +11,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/grafana/loki/operator/internal/external/k8s/k8sfakes"
+	"github.com/agardiman/loki/operator/internal/external/k8s/k8sfakes"
 )
 
 func TestGetProxy_ReturnError_WhenOtherThanNotFound(t *testing.T) {

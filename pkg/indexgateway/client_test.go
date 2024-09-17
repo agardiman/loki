@@ -20,11 +20,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/distributor/clientpool"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/distributor/clientpool"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 // const (

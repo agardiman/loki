@@ -19,16 +19,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc/testdata"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/log"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/util/filter"
+	"github.com/agardiman/loki/v3/pkg/chunkenc/testdata"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/util/filter"
 )
 
 var testEncoding = []Encoding{

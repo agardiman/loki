@@ -11062,7 +11062,7 @@ Hard node anti-affinity
 		<tr>
 			<td>write.autoscaling.behavior.scaleUp</td>
 			<td>object</td>
-			<td>see https://github.com/grafana/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown for scaledown details</td>
+			<td>see https://github.com/agardiman/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown for scaledown details</td>
 			<td><pre lang="json">
 {
   "policies": [

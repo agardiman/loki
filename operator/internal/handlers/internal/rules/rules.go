@@ -11,12 +11,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/external/k8s"
-	"github.com/grafana/loki/operator/internal/handlers/internal/openshift"
-	"github.com/grafana/loki/operator/internal/manifests"
-	manifestsocp "github.com/grafana/loki/operator/internal/manifests/openshift"
-	"github.com/grafana/loki/operator/internal/status"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/external/k8s"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/openshift"
+	"github.com/agardiman/loki/operator/internal/manifests"
+	manifestsocp "github.com/agardiman/loki/operator/internal/manifests/openshift"
+	"github.com/agardiman/loki/operator/internal/status"
 )
 
 // BuildOptions returns the ruler options needed to generate Kubernetes resource manifests.

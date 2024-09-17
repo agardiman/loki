@@ -6,10 +6,10 @@ import (
 	"github.com/prometheus/common/model"
 	"golang.org/x/exp/slices"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/bloomshipper"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/bloomshipper"
 )
 
 func truncateDay(ts model.Time) model.Time {

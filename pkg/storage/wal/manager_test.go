@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 func TestManager_Append(t *testing.T) {

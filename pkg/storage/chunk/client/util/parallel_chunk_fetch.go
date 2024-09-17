@@ -8,8 +8,8 @@ import (
 	"github.com/opentracing/opentracing-go"
 	otlog "github.com/opentracing/opentracing-go/log"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 var decodeContextPool = sync.Pool{

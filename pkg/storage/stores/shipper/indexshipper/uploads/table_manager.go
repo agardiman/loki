@@ -9,8 +9,8 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/index"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/storage"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/index"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/storage"
 )
 
 type Config struct {

@@ -15,8 +15,8 @@ import (
 	"github.com/oklog/ulid"
 	"golang.org/x/net/context"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
 )
 
 // Note: this is called both during the WAL replay (zero or more times)

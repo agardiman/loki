@@ -39,7 +39,7 @@ This chart installs the [Loki Canary app]({{< relref "../../../operations/loki-c
 
 ## Gateway
 
-By default and inspired by Grafana's [Tanka setup](https://github.com/grafana/loki/blob/main/production/ksonnet/loki), the chart
+By default and inspired by Grafana's [Tanka setup](https://github.com/agardiman/loki/blob/main/production/ksonnet/loki), the chart
 installs the gateway component which is an NGINX that exposes the Loki API and automatically proxies requests to the correct
 Loki components (read or write, or single instance in the case of filesystem storage).
 The gateway must be enabled if an Ingress is required, since the Ingress exposes the gateway only.

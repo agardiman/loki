@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 var structuredMetadataPool = sync.Pool{

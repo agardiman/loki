@@ -11,12 +11,12 @@ import (
 	"go.etcd.io/bbolt"
 	"gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/pkg/compactor/retention"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	boltdbcompactor "github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/boltdb/compactor"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/util"
+	"github.com/agardiman/loki/v3/pkg/compactor/retention"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	boltdbcompactor "github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/boltdb/compactor"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/util"
 )
 
 var (

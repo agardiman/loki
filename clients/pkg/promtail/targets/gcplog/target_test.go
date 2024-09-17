@@ -17,9 +17,9 @@ import (
 
 	"github.com/grafana/dskit/server"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client/fake"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client/fake"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
 )
 
 func TestNewGCPLogTarget(t *testing.T) {

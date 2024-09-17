@@ -3,8 +3,8 @@ package iter
 import (
 	"math"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/util/loser"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/util/loser"
 )
 
 type mergeIterator struct {

@@ -14,11 +14,11 @@ import (
 	"github.com/prometheus/prometheus/tsdb/record"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
 
-	"github.com/grafana/loki/v3/pkg/ingester/wal"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/ingester/wal"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 type testWriteTo struct {

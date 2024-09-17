@@ -7,19 +7,19 @@ import (
 
 	"github.com/go-kit/log"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
 
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/fetcher"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/fetcher"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 // storeMock is a mockable version of Loki's storage, used in querier unit tests

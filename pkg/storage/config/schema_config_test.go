@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/require"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
 )
 
 func TestChunkTableFor(t *testing.T) {

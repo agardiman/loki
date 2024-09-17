@@ -1,7 +1,7 @@
 # This minimal config scrape only single log file.
 # Primarily used in rpm/deb packaging where promtail service can be started during system init process.
 # And too much scraping during init process can overload the complete system.
-# https://github.com/grafana/loki/issues/11398
+# https://github.com/agardiman/loki/issues/11398
 
 server:
   http_listen_port: 9080

@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
-	"github.com/grafana/loki/v3/pkg/storage/wal/chunks"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/chunks"
 
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/storage"

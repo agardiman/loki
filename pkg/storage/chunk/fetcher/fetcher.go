@@ -10,14 +10,14 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/util/spanlogger"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/util/spanlogger"
 )
 
 var (

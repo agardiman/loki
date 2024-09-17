@@ -8,8 +8,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/external/k8s"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/external/k8s"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 
 	"go.uber.org/atomic"
 
-	"github.com/grafana/loki/v3/pkg/bloombuild/protos"
+	"github.com/agardiman/loki/v3/pkg/bloombuild/protos"
 )
 
 type QueueTask struct {

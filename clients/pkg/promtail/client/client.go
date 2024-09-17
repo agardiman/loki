@@ -20,10 +20,10 @@ import (
 	"github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
 
-	lokiutil "github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/build"
+	lokiutil "github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/build"
 )
 
 const (

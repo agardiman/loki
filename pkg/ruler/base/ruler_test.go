@@ -45,17 +45,17 @@ import (
 
 	"github.com/grafana/dskit/tenant"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/querier/series"
-	"github.com/grafana/loki/v3/pkg/ruler/config"
-	"github.com/grafana/loki/v3/pkg/ruler/rulespb"
-	"github.com/grafana/loki/v3/pkg/ruler/rulestore"
-	"github.com/grafana/loki/v3/pkg/ruler/rulestore/objectclient"
-	loki_storage "github.com/grafana/loki/v3/pkg/storage"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/hedging"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/testutils"
-	"github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/querier/series"
+	"github.com/agardiman/loki/v3/pkg/ruler/config"
+	"github.com/agardiman/loki/v3/pkg/ruler/rulespb"
+	"github.com/agardiman/loki/v3/pkg/ruler/rulestore"
+	"github.com/agardiman/loki/v3/pkg/ruler/rulestore/objectclient"
+	loki_storage "github.com/agardiman/loki/v3/pkg/storage"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/hedging"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/testutils"
+	"github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
 )
 
 func defaultRulerConfig(t testing.TB, store rulestore.RuleStore) Config {

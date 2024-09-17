@@ -16,14 +16,14 @@ import (
 
 	"github.com/grafana/dskit/user"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/querier/plan"
-	"github.com/grafana/loki/v3/pkg/storage/wal"
-	"github.com/grafana/loki/v3/pkg/storage/wal/chunks"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/querier/plan"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/chunks"
 )
 
 // MockStorage is a simple in-memory storage for testing

@@ -14,15 +14,15 @@ import (
 	"github.com/prometheus/common/model"
 	"golang.org/x/exp/slices"
 
-	"github.com/grafana/loki/v3/pkg/storage"
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/util"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/util/mempool"
-	"github.com/grafana/loki/v3/pkg/util/spanlogger"
+	"github.com/agardiman/loki/v3/pkg/storage"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/util"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/util/mempool"
+	"github.com/agardiman/loki/v3/pkg/util/spanlogger"
 )
 
 var (

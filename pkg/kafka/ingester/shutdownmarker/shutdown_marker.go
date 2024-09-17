@@ -10,7 +10,7 @@ import (
 
 	"github.com/grafana/dskit/multierror"
 
-	"github.com/grafana/loki/v3/pkg/util/atomicfs"
+	"github.com/agardiman/loki/v3/pkg/util/atomicfs"
 )
 
 const shutdownMarkerFilename = "shutdown-requested.txt"

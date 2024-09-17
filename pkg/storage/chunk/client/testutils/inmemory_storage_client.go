@@ -12,10 +12,10 @@ import (
 
 	"github.com/go-kit/log/level"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
-	"github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
+	"github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 type MockStorageMode int

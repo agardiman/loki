@@ -14,16 +14,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
-	tsdb_index "github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
-	util_test "github.com/grafana/loki/v3/pkg/util"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	util_math "github.com/grafana/loki/v3/pkg/util/math"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
+	tsdb_index "github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
+	util_test "github.com/agardiman/loki/v3/pkg/util"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	util_math "github.com/agardiman/loki/v3/pkg/util/math"
 )
 
 const (

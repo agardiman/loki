@@ -8,7 +8,7 @@ import (
 	"gopkg.in/yaml.v3"
 	"gotest.tools/assert"
 
-	"github.com/grafana/loki/v3/pkg/tool/rules/rwrulefmt"
+	"github.com/agardiman/loki/v3/pkg/tool/rules/rwrulefmt"
 )
 
 func TestAggregateBy(t *testing.T) {

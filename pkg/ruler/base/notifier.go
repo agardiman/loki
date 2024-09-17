@@ -19,8 +19,8 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/notifier"
 
-	ruler_config "github.com/grafana/loki/v3/pkg/ruler/config"
-	"github.com/grafana/loki/v3/pkg/util"
+	ruler_config "github.com/agardiman/loki/v3/pkg/ruler/config"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 // TODO: Instead of using the same metrics for all notifiers,

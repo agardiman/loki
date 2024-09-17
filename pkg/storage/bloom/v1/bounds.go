@@ -11,9 +11,9 @@ import (
 	"github.com/prometheus/common/model"
 	"golang.org/x/exp/slices"
 
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/util/encoding"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/util/encoding"
 )
 
 type BoundsCheck uint8

@@ -9,10 +9,10 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/util/encoding"
-	"github.com/grafana/loki/v3/pkg/util/mempool"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/util/encoding"
+	"github.com/agardiman/loki/v3/pkg/util/mempool"
 )
 
 var blockEncodings = []chunkenc.Encoding{

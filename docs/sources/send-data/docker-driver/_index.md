@@ -20,7 +20,7 @@ Documentation on configuring the Loki Docker Driver can be found on the
 [configuration page]({{< relref "./configuration" >}}).
 
 If you have any questions or issues using the Docker plugin, open an issue in 
-the [Loki repository](https://github.com/grafana/loki/issues).
+the [Loki repository](https://github.com/agardiman/loki/issues).
 
 ## Install the Docker driver client
 

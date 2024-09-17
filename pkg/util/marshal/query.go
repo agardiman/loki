@@ -12,12 +12,12 @@ import (
 	"github.com/prometheus/prometheus/promql"
 	"github.com/prometheus/prometheus/promql/parser"
 
-	"github.com/grafana/loki/v3/pkg/loghttp"
-	legacy "github.com/grafana/loki/v3/pkg/loghttp/legacy"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/util/httpreq"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
+	legacy "github.com/agardiman/loki/v3/pkg/loghttp/legacy"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/util/httpreq"
 )
 
 // NewResultValue constructs a ResultValue from a promql.Value

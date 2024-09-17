@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client/fake"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client/fake"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 var (

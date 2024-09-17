@@ -10,10 +10,10 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/compactor/deletionmode"
-	"github.com/grafana/loki/v3/pkg/compactor/retention"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/util/filter"
+	"github.com/agardiman/loki/v3/pkg/compactor/deletionmode"
+	"github.com/agardiman/loki/v3/pkg/compactor/retention"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/util/filter"
 )
 
 const testUserID = "test-user"

@@ -13,8 +13,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/twmb/franz-go/pkg/kgo"
 
-	"github.com/grafana/loki/v3/pkg/distributor"
-	"github.com/grafana/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/distributor"
+	"github.com/agardiman/loki/v3/pkg/kafka"
 )
 
 const writeTimeout = time.Minute

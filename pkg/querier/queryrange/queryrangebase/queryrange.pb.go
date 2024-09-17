@@ -9,10 +9,10 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/gogo/protobuf/types"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-	github_com_grafana_loki_v3_pkg_logproto "github.com/grafana/loki/v3/pkg/logproto"
-	logproto "github.com/grafana/loki/v3/pkg/logproto"
-	definitions "github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
-	resultscache "github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
+	github_com_grafana_loki_v3_pkg_logproto "github.com/agardiman/loki/v3/pkg/logproto"
+	logproto "github.com/agardiman/loki/v3/pkg/logproto"
+	definitions "github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
+	resultscache "github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
 	_ "google.golang.org/protobuf/types/known/durationpb"
 	io "io"
 	math "math"
@@ -268,7 +268,7 @@ func (m *PrometheusData) GetResult() []SampleStream {
 }
 
 type SampleStream struct {
-	Labels  []github_com_grafana_loki_v3_pkg_logproto.LabelAdapter `protobuf:"bytes,1,rep,name=labels,proto3,customtype=github.com/grafana/loki/v3/pkg/logproto.LabelAdapter" json:"metric"`
+	Labels  []github_com_grafana_loki_v3_pkg_logproto.LabelAdapter `protobuf:"bytes,1,rep,name=labels,proto3,customtype=github.com/agardiman/loki/v3/pkg/logproto.LabelAdapter" json:"metric"`
 	Samples []logproto.LegacySample                                `protobuf:"bytes,2,rep,name=samples,proto3" json:"values"`
 }
 

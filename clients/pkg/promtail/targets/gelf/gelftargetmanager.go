@@ -4,10 +4,10 @@ import (
 	"github.com/go-kit/log"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/clients/pkg/logentry/stages"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/target"
+	"github.com/agardiman/loki/v3/clients/pkg/logentry/stages"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/target"
 )
 
 // TargetManager manages a series of Gelf Targets.

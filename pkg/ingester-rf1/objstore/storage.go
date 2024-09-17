@@ -9,9 +9,9 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/storage"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
 )
 
 type Multi struct {

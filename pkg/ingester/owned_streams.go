@@ -8,7 +8,7 @@ import (
 	"github.com/prometheus/common/model"
 	"go.uber.org/atomic"
 
-	"github.com/grafana/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
 )
 
 var notOwnedStreamsMetric = promauto.NewGauge(prometheus.GaugeOpts{

@@ -10,7 +10,7 @@ import (
 	"github.com/go-kit/log/level"
 	"golang.org/x/exp/slices"
 
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/seriesvolume"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/seriesvolume"
 
 	"github.com/gogo/status"
 	"github.com/grafana/dskit/httpgrpc"
@@ -22,15 +22,15 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"google.golang.org/grpc/codes"
 
-	"github.com/grafana/loki/v3/pkg/distributor/clientpool"
-	"github.com/grafana/loki/v3/pkg/ingester/client"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	index_stats "github.com/grafana/loki/v3/pkg/storage/stores/index/stats"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/distributor/clientpool"
+	"github.com/agardiman/loki/v3/pkg/ingester/client"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	index_stats "github.com/agardiman/loki/v3/pkg/storage/stores/index/stats"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 type responseFromIngesters struct {

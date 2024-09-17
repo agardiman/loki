@@ -6,7 +6,7 @@ linters-settings:
     sections:
     - standard
     - default
-    - prefix(github.com/grafana/loki/operator)
+    - prefix(github.com/agardiman/loki/operator)
     - blank
     - dot
   govet:

@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/manifests/internal/config"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/manifests/internal/config"
 )
 
 func TestNewTimeoutConfig_ReturnsDefaults_WhenLimitsSpecEmpty(t *testing.T) {

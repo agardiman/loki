@@ -5,9 +5,9 @@ import (
 
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/queue"
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/stats"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/queue"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/stats"
 )
 
 var (

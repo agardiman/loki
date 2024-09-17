@@ -14,10 +14,10 @@ import (
 
 	"github.com/grafana/dskit/tenant"
 
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
-	"github.com/grafana/loki/v3/pkg/util/validation"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
+	"github.com/agardiman/loki/v3/pkg/util/validation"
 )
 
 type cacheKeySeries struct {

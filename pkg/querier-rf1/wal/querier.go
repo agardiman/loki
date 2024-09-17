@@ -13,12 +13,12 @@ import (
 
 	"github.com/grafana/dskit/tenant"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/storage/wal"
-	"github.com/grafana/loki/v3/pkg/storage/wal/chunks"
-	"github.com/grafana/loki/v3/pkg/storage/wal/index"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/chunks"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/index"
 )
 
 var _ logql.Querier = (*Querier)(nil)

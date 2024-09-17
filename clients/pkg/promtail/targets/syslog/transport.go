@@ -21,8 +21,8 @@ import (
 	"github.com/leodido/go-syslog/v4"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/syslog/syslogparser"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/syslog/syslogparser"
 )
 
 var (

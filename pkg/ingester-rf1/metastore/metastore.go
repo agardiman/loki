@@ -21,9 +21,9 @@ import (
 	raftwal "github.com/hashicorp/raft-wal"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/health"
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/raftleader"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/health"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/raftleader"
 )
 
 const metastoreRaftLeaderHealthServiceName = "metastorepb.MetastoreService.RaftLeader"

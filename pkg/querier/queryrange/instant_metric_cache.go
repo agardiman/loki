@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-kit/log"
 
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
 )
 
 type InstantMetricSplitter struct {

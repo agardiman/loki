@@ -12,10 +12,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	storageconfig "github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/bloomshipper"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	storageconfig "github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/bloomshipper"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 type RetentionConfig struct {

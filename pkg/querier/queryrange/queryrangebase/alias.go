@@ -1,8 +1,8 @@
 package queryrangebase
 
 import (
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
 )
 
 // Helpful aliases for refactoring circular imports

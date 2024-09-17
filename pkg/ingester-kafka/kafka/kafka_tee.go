@@ -18,8 +18,8 @@ import (
 
 	"github.com/twmb/franz-go/plugin/kprom"
 
-	"github.com/grafana/loki/v3/pkg/distributor"
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/distributor"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 const writeTimeout = time.Minute

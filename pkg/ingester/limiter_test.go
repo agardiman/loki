@@ -11,7 +11,7 @@ import (
 	"go.uber.org/atomic"
 	"golang.org/x/time/rate"
 
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 func TestStreamCountLimiter_AssertNewStreamAllowed(t *testing.T) {

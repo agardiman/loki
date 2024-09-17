@@ -8,9 +8,9 @@ import (
 	"github.com/go-kit/log"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/compactor"
-	"github.com/grafana/loki/v3/pkg/compactor/retention"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/compactor"
+	"github.com/agardiman/loki/v3/pkg/compactor/retention"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
 )
 
 type testObjClient struct {

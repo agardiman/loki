@@ -18,7 +18,7 @@ Loki exposes the following observability data about itself:
 
 You can also scrape the Loki logs and metrics and push them to separate instances of Loki and Mimir to provide information about the health of your Loki system (a process known as "meta-monitoring").
 
-The Loki [mixin](https://github.com/grafana/loki/blob/main/production/loki-mixin) is an opinionated set of dashboards, alerts and recording rules to monitor your Loki cluster. The mixin provides a comprehensive package for monitoring Loki in production. You can install the mixin into a Grafana instance.
+The Loki [mixin](https://github.com/agardiman/loki/blob/main/production/loki-mixin) is an opinionated set of dashboards, alerts and recording rules to monitor your Loki cluster. The mixin provides a comprehensive package for monitoring Loki in production. You can install the mixin into a Grafana instance.
 
 - To install meta-monitoring using the Loki Helm Chart and Grafana Cloud, follow [these directions](https://grafana.com/docs/loki/<LOKI_VERSION>/setup/install/helm/monitor-and-alert/with-grafana-cloud/).
 

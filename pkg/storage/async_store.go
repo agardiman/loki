@@ -8,10 +8,10 @@ import (
 	"github.com/c2h5oh/datasize"
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/stores"
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/seriesvolume"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/stores"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/seriesvolume"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/sharding"
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
@@ -19,12 +19,12 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/fetcher"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/stats"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/fetcher"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/stats"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 type IngesterQuerier interface {

@@ -8,7 +8,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_grafana_loki_v3_pkg_querier_plan "github.com/grafana/loki/v3/pkg/querier/plan"
+	github_com_grafana_loki_v3_pkg_querier_plan "github.com/agardiman/loki/v3/pkg/querier/plan"
 	github_com_prometheus_common_model "github.com/prometheus/common/model"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -36,7 +36,7 @@ type FilterChunkRefRequest struct {
 	Through github_com_prometheus_common_model.Time `protobuf:"varint,2,opt,name=through,proto3,customtype=github.com/prometheus/common/model.Time" json:"through"`
 	Refs    []*GroupedChunkRefs                     `protobuf:"bytes,3,rep,name=refs,proto3" json:"refs,omitempty"`
 	// field id 4 (filters) has been removed in favour of field id 5 (plan)
-	Plan   github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,5,opt,name=plan,proto3,customtype=github.com/grafana/loki/v3/pkg/querier/plan.QueryPlan" json:"plan"`
+	Plan   github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,5,opt,name=plan,proto3,customtype=github.com/agardiman/loki/v3/pkg/querier/plan.QueryPlan" json:"plan"`
 	Blocks []string                                              `protobuf:"bytes,6,rep,name=blocks,proto3" json:"blocks,omitempty"`
 }
 

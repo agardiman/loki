@@ -6,11 +6,11 @@ import (
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
 
-	"github.com/grafana/loki/v3/pkg/iter"
-	v2iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/util/encoding"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	v2iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/util/encoding"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 /*

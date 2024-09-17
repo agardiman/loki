@@ -10,10 +10,10 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/loghttp"
-	legacy_loghttp "github.com/grafana/loki/v3/pkg/loghttp/legacy"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/util/marshal"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
+	legacy_loghttp "github.com/agardiman/loki/v3/pkg/loghttp/legacy"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/util/marshal"
 )
 
 func Test_DecodePushRequest(t *testing.T) {
@@ -84,7 +84,7 @@ func Test_DecodePushRequest(t *testing.T) {
 		// The following test cases are added to cover a regression. Even though the Loki HTTP API
 		// docs for the push endpoint state that the stream label values should be strings, we
 		// previously didn't enforce this requirement.
-		// With https://github.com/grafana/loki/pull/9694, we started enforcing this requirement
+		// With https://github.com/agardiman/loki/pull/9694, we started enforcing this requirement
 		// and that broke some users. We are adding these test cases to ensure that we don't
 		// enforce this requirement in the future. Note that we may want to enforce this requirement
 		// in a future major release, in which case we should modify these test cases.

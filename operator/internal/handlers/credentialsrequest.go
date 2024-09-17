@@ -13,11 +13,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	ctrlutil "sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/config"
-	"github.com/grafana/loki/operator/internal/external/k8s"
-	"github.com/grafana/loki/operator/internal/manifests"
-	"github.com/grafana/loki/operator/internal/manifests/openshift"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/config"
+	"github.com/agardiman/loki/operator/internal/external/k8s"
+	"github.com/agardiman/loki/operator/internal/manifests"
+	"github.com/agardiman/loki/operator/internal/manifests/openshift"
 )
 
 // CreateUpdateDeleteCredentialsRequest creates a new CredentialsRequest resource for a Lokistack

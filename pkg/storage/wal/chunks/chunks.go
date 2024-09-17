@@ -14,9 +14,9 @@ import (
 	"github.com/golang/snappy"
 	"github.com/klauspost/compress/s2"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 // EncodingType defines the type for encoding enums

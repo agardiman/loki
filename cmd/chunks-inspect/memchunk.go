@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
 )
 
 type block struct {

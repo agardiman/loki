@@ -228,7 +228,7 @@ For more information, see the [retention configuration](https://grafana.com/docs
 
 ### Single machine/local development (boltdb+filesystem)
 
-[The repo contains a working example](https://github.com/grafana/loki/blob/main/cmd/loki/loki-local-config.yaml), you may want to checkout a tag of the repo to make sure you get a compatible example.
+[The repo contains a working example](https://github.com/agardiman/loki/blob/main/cmd/loki/loki-local-config.yaml), you may want to checkout a tag of the repo to make sure you get a compatible example.
 
 ### GCP deployment (GCS Single Store)
 
@@ -318,7 +318,7 @@ The role should have a policy with the following permissions attached.
 
 This guide assumes a provisioned EKS cluster.
 
-1. Checkout the Loki repository and navigate to [production/terraform/modules/s3](https://github.com/grafana/loki/tree/main/production/terraform/modules/s3).
+1. Checkout the Loki repository and navigate to [production/terraform/modules/s3](https://github.com/agardiman/loki/tree/main/production/terraform/modules/s3).
 
 2. Initialize Terraform `terraform init`.
 

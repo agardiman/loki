@@ -13,7 +13,7 @@ local k = import 'github.com/grafana/jsonnet-libs/ksonnet-util/kausal.libsonnet'
       serviceAccount = k.core.v1.serviceAccount,
       subject = k.rbac.v1.subject,
       statefulSet = k.apps.v1.statefulSet;
-local loki = import 'github.com/grafana/loki/production/ksonnet/loki/loki.libsonnet';
+local loki = import 'github.com/agardiman/loki/production/ksonnet/loki/loki.libsonnet';
 local util = (import 'github.com/grafana/jsonnet-libs/ksonnet-util/util.libsonnet').withK(k) {
   withNonRootSecurityContext(uid, fsGroup=null)::
     { spec+: { template+: { spec+: { securityContext: {

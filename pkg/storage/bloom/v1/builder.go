@@ -7,9 +7,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/util/encoding"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/util/encoding"
 )
 
 // Options for the block which are not encoded into it iself.

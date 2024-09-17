@@ -16,17 +16,17 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/ingester"
-	"github.com/grafana/loki/v3/pkg/ingester/index"
-	"github.com/grafana/loki/v3/pkg/loghttp/push"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/pattern/aggregation"
-	"github.com/grafana/loki/v3/pkg/pattern/drain"
-	"github.com/grafana/loki/v3/pkg/pattern/iter"
-	"github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	lokiring "github.com/grafana/loki/v3/pkg/util/ring"
+	"github.com/agardiman/loki/v3/pkg/ingester"
+	"github.com/agardiman/loki/v3/pkg/ingester/index"
+	"github.com/agardiman/loki/v3/pkg/loghttp/push"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/pattern/aggregation"
+	"github.com/agardiman/loki/v3/pkg/pattern/drain"
+	"github.com/agardiman/loki/v3/pkg/pattern/iter"
+	"github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	lokiring "github.com/agardiman/loki/v3/pkg/util/ring"
 )
 
 const indexShards = 32

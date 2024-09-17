@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Output plugin to ship logs to a Grafana Loki server'
   spec.description   = 'Output plugin to ship logs to a Grafana Loki server'
-  spec.homepage      = 'https://github.com/grafana/loki/'
+  spec.homepage      = 'https://github.com/agardiman/loki/'
   spec.license       = 'Apache-2.0'
 
   spec.required_ruby_version = '>= 2.7'

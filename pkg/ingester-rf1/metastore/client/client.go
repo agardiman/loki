@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
 )
 
 type Config struct {

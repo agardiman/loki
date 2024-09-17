@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	metastorepb "github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	metastorepb "github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
 )
 
 func TestMetastore_ListBlocksForQuery(t *testing.T) {

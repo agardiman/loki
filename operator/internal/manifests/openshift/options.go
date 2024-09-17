@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/config"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/config"
 )
 
 // Options is the set of internal template options for rendering

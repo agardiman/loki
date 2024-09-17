@@ -19,11 +19,11 @@ import (
 
 	"github.com/grafana/dskit/tenant"
 
-	"github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/util/math"
-	"github.com/grafana/loki/v3/pkg/util/validation"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/util/math"
+	"github.com/agardiman/loki/v3/pkg/util/validation"
 )
 
 // ConstSplitter is a utility for using a constant split interval when determining cache keys

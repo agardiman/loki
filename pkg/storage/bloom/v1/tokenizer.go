@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 const (

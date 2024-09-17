@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/integration/client"
-	"github.com/grafana/loki/v3/integration/cluster"
+	"github.com/agardiman/loki/v3/integration/client"
+	"github.com/agardiman/loki/v3/integration/cluster"
 )
 
 func TestSingleBinaryIngestQuery(t *testing.T) {
@@ -41,7 +41,7 @@ func TestSingleBinaryIngestQuery(t *testing.T) {
 		require.NoError(t, cli.PushLogLine("lineB", cli.Now.Add(-45*time.Minute), nil, map[string]string{"job": "fake"}))
 
 		// TODO: Flushing is currently causing a panic, as the boltdb shipper is shared using a global variable in:
-		// https://github.com/grafana/loki/blob/66a4692423582ed17cce9bd86b69d55663dc7721/pkg/storage/factory.go#L32-L35
+		// https://github.com/agardiman/loki/blob/66a4692423582ed17cce9bd86b69d55663dc7721/pkg/storage/factory.go#L32-L35
 		// require.NoError(t, cli.Flush())
 	})
 

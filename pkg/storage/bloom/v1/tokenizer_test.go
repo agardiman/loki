@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 const BigFile = "../../../logql/sketch/testdata/war_peace.txt"

@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 func TestOTLPToLokiPushRequest(t *testing.T) {

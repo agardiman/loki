@@ -3,8 +3,8 @@ package deletion
 import (
 	"errors"
 
-	"github.com/grafana/loki/v3/pkg/compactor/deletionmode"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/compactor/deletionmode"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
 )
 
 var (

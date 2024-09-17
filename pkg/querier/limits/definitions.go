@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/grafana/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/logql"
 )
 
 type TimeRangeLimits interface {

@@ -16,12 +16,12 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/storage"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	tsdbindex "github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
-	"github.com/grafana/loki/v3/pkg/storage/wal/chunks"
-	"github.com/grafana/loki/v3/pkg/storage/wal/index"
-	"github.com/grafana/loki/v3/pkg/util/encoding"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	tsdbindex "github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/tsdb/index"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/chunks"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/index"
+	"github.com/agardiman/loki/v3/pkg/util/encoding"
 )
 
 // LOKW is the magic number for the Loki WAL format.

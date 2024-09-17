@@ -12,10 +12,10 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/compactor/retention"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/local"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper/storage"
+	"github.com/agardiman/loki/v3/pkg/compactor/retention"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/local"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper/storage"
 )
 
 const (

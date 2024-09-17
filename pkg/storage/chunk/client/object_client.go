@@ -11,9 +11,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/util"
-	"github.com/grafana/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/util"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
 )
 
 // ObjectClient is used to store arbitrary data in Object Store (S3/GCS/Azure/...)

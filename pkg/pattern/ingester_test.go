@@ -14,16 +14,16 @@ import (
 
 	"github.com/grafana/dskit/ring"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/pattern/aggregation"
-	"github.com/grafana/loki/v3/pkg/pattern/iter"
-	"github.com/grafana/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/pattern/aggregation"
+	"github.com/agardiman/loki/v3/pkg/pattern/iter"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
 
-	"github.com/grafana/loki/v3/pkg/pattern/drain"
+	"github.com/agardiman/loki/v3/pkg/pattern/drain"
 
-	loghttp_push "github.com/grafana/loki/v3/pkg/loghttp/push"
+	loghttp_push "github.com/agardiman/loki/v3/pkg/loghttp/push"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 func TestInstancePushQuery(t *testing.T) {

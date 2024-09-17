@@ -21,15 +21,15 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/atomic"
 
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/queue"
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/bloomshipper"
-	"github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	utillog "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/util/spanlogger"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/queue"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/bloomshipper"
+	"github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	utillog "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/util/spanlogger"
 )
 
 const (

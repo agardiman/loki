@@ -8,9 +8,9 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/util/filter"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/util/filter"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 // IntervalFilter contains the interval to delete

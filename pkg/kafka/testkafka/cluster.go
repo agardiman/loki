@@ -12,7 +12,7 @@ import (
 	"github.com/twmb/franz-go/pkg/kfake"
 	"github.com/twmb/franz-go/pkg/kmsg"
 
-	"github.com/grafana/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/kafka"
 )
 
 // CreateCluster returns a fake Kafka cluster for unit testing.

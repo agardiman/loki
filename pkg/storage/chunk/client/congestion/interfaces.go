@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-kit/log"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/hedging"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/hedging"
 )
 
 // Controller handles congestion by:

@@ -836,9 +836,9 @@ In detail the separation of concerns between both CRDs looks like:
 ## Implementation History
 
 * 2022-04-21: Initial draft proposal
-* 2022-04-21: Spike implementation for `LokiRule` reconciliation and `RulerConfig` types. (See [PR](https://github.com/grafana/loki/pull/5986))
-* 2022-04-26: Update draft to use `LokiRule` types to use webhook-based validation and `LokiRuleSpec.Selector`, `LokiRuleSpec.NamespaceSelector`. (See [PR](https://github.com/grafana/loki/pull/5986))
-* 2022-04-28: Update draft to split `LokiRule` into two distinct types `AlertingRule` and `RecordingRule`. (See [PR](https://github.com/grafana/loki/pull/5986))
+* 2022-04-21: Spike implementation for `LokiRule` reconciliation and `RulerConfig` types. (See [PR](https://github.com/agardiman/loki/pull/5986))
+* 2022-04-26: Update draft to use `LokiRule` types to use webhook-based validation and `LokiRuleSpec.Selector`, `LokiRuleSpec.NamespaceSelector`. (See [PR](https://github.com/agardiman/loki/pull/5986))
+* 2022-04-28: Update draft to split `LokiRule` into two distinct types `AlertingRule` and `RecordingRule`. (See [PR](https://github.com/agardiman/loki/pull/5986))
 * 2022-04-28: Renamed `LokiRulerConfig` types to `RulerConfig` as per `Loki` prefix is part of the API group `loki.grafana.com`, i.e. fully qualified type is `ruler.loki.grafana.com`
 * 2022-05-02: Update rule configmap generation based on per tenant subdirectory structure.
 * 2022-05-03: Update rule configmap entry naming to use Kubernetes `Metadata.UID` as permanent suffix.

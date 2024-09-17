@@ -11,18 +11,18 @@ import (
 	logger "github.com/go-kit/log"
 	"github.com/grafana/dskit/multierror"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	"github.com/grafana/loki/v3/pkg/iter"
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/storage/bloom/v1/filter"
+	"github.com/agardiman/loki/v3/pkg/storage/bloom/v1/filter"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

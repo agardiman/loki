@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/testutils"
-	"github.com/grafana/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/testutils"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
 )
 
 const (

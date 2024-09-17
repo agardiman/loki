@@ -17,14 +17,14 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client/fake"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/limit"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/utils"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/wal"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client/fake"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/limit"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/utils"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/wal"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	lokiflag "github.com/grafana/loki/v3/pkg/util/flagext"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	lokiflag "github.com/agardiman/loki/v3/pkg/util/flagext"
 )
 
 var testLimitsConfig = limit.Config{

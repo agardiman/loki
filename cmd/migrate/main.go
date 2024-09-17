@@ -17,16 +17,16 @@ import (
 	"github.com/grafana/dskit/user"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/loki"
-	"github.com/grafana/loki/v3/pkg/storage"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/indexshipper"
-	"github.com/grafana/loki/v3/pkg/util/cfg"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/loki"
+	"github.com/agardiman/loki/v3/pkg/storage"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/indexshipper"
+	"github.com/agardiman/loki/v3/pkg/util/cfg"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 type syncRange struct {

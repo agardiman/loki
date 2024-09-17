@@ -125,7 +125,7 @@ canary.  To stop or start the canary issue an HTTP GET request against the `/sus
 ### Binary
 
 Loki Canary is provided as a pre-compiled binary as part of the
-[Loki Releases](https://github.com/grafana/loki/releases) on GitHub.
+[Loki Releases](https://github.com/agardiman/loki/releases) on GitHub.
 
 ### Docker
 

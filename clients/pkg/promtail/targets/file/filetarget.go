@@ -15,10 +15,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/positions"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/target"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/positions"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/target"
 )
 
 const (

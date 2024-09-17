@@ -20,8 +20,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/atomic"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client/fake"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/positions"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client/fake"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/positions"
 )
 
 func TestFileTargetSync(t *testing.T) {

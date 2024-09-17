@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/integration/client"
-	"github.com/grafana/loki/v3/integration/cluster"
+	"github.com/agardiman/loki/v3/integration/client"
+	"github.com/agardiman/loki/v3/integration/cluster"
 
-	"github.com/grafana/loki/v3/pkg/util/querylimits"
+	"github.com/agardiman/loki/v3/pkg/util/querylimits"
 )
 
 func TestPerRequestLimits(t *testing.T) {

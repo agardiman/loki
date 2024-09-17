@@ -16,13 +16,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/version"
 
-	"github.com/grafana/loki/v3/pkg/loki"
-	loki_runtime "github.com/grafana/loki/v3/pkg/runtime"
-	"github.com/grafana/loki/v3/pkg/util"
-	_ "github.com/grafana/loki/v3/pkg/util/build"
-	"github.com/grafana/loki/v3/pkg/util/cfg"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/loki"
+	loki_runtime "github.com/agardiman/loki/v3/pkg/runtime"
+	"github.com/agardiman/loki/v3/pkg/util"
+	_ "github.com/agardiman/loki/v3/pkg/util/build"
+	"github.com/agardiman/loki/v3/pkg/util/cfg"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 func exit(code int) {
@@ -110,7 +110,7 @@ func main() {
 
 	// Allocate a block of memory to reduce the frequency of garbage collection.
 	// The larger the ballast, the lower the garbage collection frequency.
-	// https://github.com/grafana/loki/issues/781
+	// https://github.com/agardiman/loki/issues/781
 	ballast := make([]byte, config.BallastBytes)
 	runtime.KeepAlive(ballast)
 

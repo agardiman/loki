@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grafana/loki/v3/pkg/storage/types"
-	"github.com/grafana/loki/v3/pkg/util/httpreq"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/util/httpreq"
 
 	"github.com/grafana/dskit/tenant"
 	"github.com/grafana/dskit/user"
 
-	"github.com/grafana/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
 
 	"github.com/grafana/dskit/backoff"
 	"github.com/grafana/dskit/flagext"
@@ -24,18 +24,18 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/distributor/shardstreams"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/querier/astmapper"
-	"github.com/grafana/loki/v3/pkg/querier/plan"
-	loki_runtime "github.com/grafana/loki/v3/pkg/runtime"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/seriesvolume"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/distributor/shardstreams"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/querier/astmapper"
+	"github.com/agardiman/loki/v3/pkg/querier/plan"
+	loki_runtime "github.com/agardiman/loki/v3/pkg/runtime"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/seriesvolume"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 func defaultConfig() *Config {

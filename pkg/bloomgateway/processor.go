@@ -10,10 +10,10 @@ import (
 	"github.com/grafana/dskit/concurrency"
 	"github.com/grafana/dskit/multierror"
 
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/shipper/bloomshipper"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/shipper/bloomshipper"
 )
 
 func newProcessor(id string, concurrency int, store bloomshipper.Store, logger log.Logger, metrics *workerMetrics) *processor {

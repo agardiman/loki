@@ -13,9 +13,9 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/runtime"
-	lokiring "github.com/grafana/loki/v3/pkg/util/ring"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/runtime"
+	lokiring "github.com/agardiman/loki/v3/pkg/util/ring"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 func Test_recalculateOwnedStreams_newRecalculateOwnedStreams(t *testing.T) {

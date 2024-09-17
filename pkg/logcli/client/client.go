@@ -19,12 +19,12 @@ import (
 
 	"github.com/grafana/dskit/backoff"
 
-	"github.com/grafana/loki/v3/pkg/logcli/volume"
-	"github.com/grafana/loki/v3/pkg/loghttp"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/stores/index/seriesvolume"
-	"github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/build"
+	"github.com/agardiman/loki/v3/pkg/logcli/volume"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/index/seriesvolume"
+	"github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/build"
 )
 
 const (

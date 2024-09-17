@@ -8,7 +8,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 func parseCWEvent(ctx context.Context, b *batch, ev *events.CloudwatchLogsEvent) error {

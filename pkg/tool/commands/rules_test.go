@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 
-	"github.com/grafana/loki/v3/pkg/tool/rules/rwrulefmt"
+	"github.com/agardiman/loki/v3/pkg/tool/rules/rwrulefmt"
 )
 
 func TestCheckDuplicates(t *testing.T) {

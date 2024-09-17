@@ -3,8 +3,8 @@ package v1
 import (
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/logql/log"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
 )
 
 // LabelMatcher represents bloom tests for key-value pairs, mapped from

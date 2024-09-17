@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/grafana/loki/pkg/logql/syntax"
+	"github.com/agardiman/loki/pkg/logql/syntax"
 	"github.com/prometheus/prometheus/model/labels"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
 )
 
 const (

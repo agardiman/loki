@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
@@ -17,8 +17,8 @@ import (
 
 	"github.com/grafana/regexp/syntax"
 
-	"github.com/grafana/loki/v3/pkg/logql/log"
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
 )
 
 // Expr is the root expression which can be a SampleExpr or LogSelectorExpr
@@ -1845,7 +1845,7 @@ func reduceBinOp(op string, left, right float64) *LiteralExpr {
 // pass `swap=true` otherwise.
 // This matters because, either it's (vector op scalar) or (scalar op vector), the return sample value should
 // always be sample value of vector argument.
-// https://github.com/grafana/loki/issues/10741
+// https://github.com/agardiman/loki/issues/10741
 func MergeBinOp(op string, left, right *promql.Sample, swap, filter, isVectorComparison bool) (*promql.Sample, error) {
 	var merger func(left, right *promql.Sample) *promql.Sample
 

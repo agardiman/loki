@@ -17,7 +17,7 @@ import (
 	"github.com/twmb/franz-go/pkg/kgo"
 	"github.com/twmb/franz-go/plugin/kprom"
 
-	"github.com/grafana/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/kafka"
 )
 
 // PartitionReader is responsible for reading data from a specific Kafka partition

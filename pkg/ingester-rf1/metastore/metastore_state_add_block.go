@@ -7,7 +7,7 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"go.etcd.io/bbolt"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
 )
 
 func (m *Metastore) AddBlock(_ context.Context, req *metastorepb.AddBlockRequest) (*metastorepb.AddBlockResponse, error) {

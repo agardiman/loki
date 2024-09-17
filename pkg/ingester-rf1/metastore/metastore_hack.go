@@ -8,7 +8,7 @@ import (
 	"github.com/oklog/ulid"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/raftlogpb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/raftlogpb"
 )
 
 // FIXME(kolesnikovae):

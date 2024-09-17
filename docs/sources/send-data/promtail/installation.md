@@ -19,7 +19,7 @@ or there is a Helm chart to install it in a Kubernetes cluster.
 ## Install the binary
 
 Every Grafana Loki release includes binaries for Promtail which can be found on the
-[Releases page](https://github.com/grafana/loki/releases) as part of the release assets.
+[Releases page](https://github.com/agardiman/loki/releases) as part of the release assets.
 
 ## Install using APT or RPM package manager
 

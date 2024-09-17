@@ -9,9 +9,9 @@ import (
 	"github.com/grafana/dskit/runtimeconfig"
 	"gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/pkg/runtime"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/runtime"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 // runtimeConfigValues are values that can be reloaded from configuration file while Loki is running.

@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"k8s.io/utils/ptr"
 
-	configv1 "github.com/grafana/loki/operator/apis/config/v1"
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/manifests/storage"
+	configv1 "github.com/agardiman/loki/operator/apis/config/v1"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/manifests/storage"
 )
 
 func TestBuild_ConfigAndRuntimeConfig_NoRuntimeConfigGenerated(t *testing.T) {
@@ -79,7 +79,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -92,7 +92,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -336,7 +336,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -349,7 +349,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -762,7 +762,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -775,7 +775,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -1120,7 +1120,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -1133,7 +1133,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -1479,7 +1479,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -1492,7 +1492,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -1872,7 +1872,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -1885,7 +1885,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -2207,7 +2207,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -2220,7 +2220,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -2646,7 +2646,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -2659,7 +2659,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -2970,7 +2970,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -2983,7 +2983,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -3467,7 +3467,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -3480,7 +3480,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -3728,7 +3728,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -3741,7 +3741,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -3990,7 +3990,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -4003,7 +4003,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -4253,7 +4253,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -4266,7 +4266,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -4552,7 +4552,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -4565,7 +4565,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -4849,7 +4849,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -4862,7 +4862,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -5347,7 +5347,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -5360,7 +5360,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -5523,7 +5523,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -5536,7 +5536,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -5692,7 +5692,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -5705,7 +5705,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000
@@ -6084,7 +6084,7 @@ ingester_client:
 #
 # Values for not exposed fields are taken from the grafana/loki production
 # configuration manifests.
-# (See https://github.com/grafana/loki/blob/main/production/ksonnet/loki/config.libsonnet)
+# (See https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/config.libsonnet)
 limits_config:
   ingestion_rate_strategy: global
   ingestion_rate_mb: 4
@@ -6097,7 +6097,7 @@ limits_config:
   creation_grace_period: 10m
   # Keep max_streams_per_user always to 0 to default
   # using max_global_streams_per_user always.
-  # (See https://github.com/grafana/loki/blob/main/pkg/ingester/limiter.go#L73)
+  # (See https://github.com/agardiman/loki/blob/main/pkg/ingester/limiter.go#L73)
   max_streams_per_user: 0
   max_line_size: 256000
   max_entries_limit_per_query: 5000

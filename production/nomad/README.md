@@ -33,7 +33,7 @@ See [loki-distributed](./loki-distributed) README for more info.
 ## Service discovery when scaling
 
 When using multiple Loki instances memberlist advertises wrong address (see this
-[issue](https://github.com/grafana/loki/issues/5610)), that is why these
+[issue](https://github.com/agardiman/loki/issues/5610)), that is why these
 examples are using Consul ring for service discovery.
 
 Is you are using Nomad then you are probably also using Consul, so this

@@ -76,7 +76,7 @@ Taking inspiration from [Grafana Mimir's implementation](/docs/mimir/latest/oper
 
 ## Other Notes
 
-If this feature were to be used in conjunction with [rule-based sharding](https://github.com/grafana/loki/pull/8092), this can present some further optimisation but also some additional challenges to consider.
+If this feature were to be used in conjunction with [rule-based sharding](https://github.com/agardiman/loki/pull/8092), this can present some further optimisation but also some additional challenges to consider.
 
 > Aside: the `ruler` shards by rule group by default, which means that rules can be unevenly balanced across `ruler` instances if some rule groups have more expensive queries than others. Another consequence of this is that rule groups execute sequentially, so expensive queries can cause subsequent rules in the group to be delayed or even missed. Rule groups are evaluated concurrently.
 

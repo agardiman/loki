@@ -23,7 +23,7 @@ import (
 
 	"github.com/grafana/dskit/flagext"
 
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 // GZip source string and return compressed string

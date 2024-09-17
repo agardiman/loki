@@ -20,14 +20,14 @@ import (
 
 	"github.com/grafana/dskit/tenant"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/serverutils"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/target"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/serverutils"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/target"
 
-	"github.com/grafana/loki/v3/pkg/loghttp/push"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/loghttp/push"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 type PushTarget struct {

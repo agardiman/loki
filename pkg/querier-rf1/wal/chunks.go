@@ -9,14 +9,14 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/grafana/loki/v3/pkg/iter"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/log"
-	"github.com/grafana/loki/v3/pkg/storage/wal"
-	"github.com/grafana/loki/v3/pkg/storage/wal/chunks"
-	"github.com/grafana/loki/v3/pkg/storage/wal/index"
+	"github.com/agardiman/loki/v3/pkg/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/log"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/chunks"
+	"github.com/agardiman/loki/v3/pkg/storage/wal/index"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 const defaultBatchSize = 16

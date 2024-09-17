@@ -8,8 +8,8 @@ import (
 	"github.com/prometheus/common/model"
 	"go.uber.org/atomic"
 
-	"github.com/grafana/loki/v3/pkg/ingester/client"
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/ingester/client"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 type queryLimiterCtxKey struct{}

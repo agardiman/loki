@@ -31,7 +31,7 @@ When you enable istio-injection on the namespace where Loki is running, you need
 
 Make the following modifications to the file for the Loki Query Frontend service.
 
-1. Change the name of `grpc` port to `grpclb`. This is used by the grpc load balancing strategy which relies on SRV records. Otherwise the `querier` will not be able to reach the `query-frontend`. See https://github.com/grafana/loki/blob/0116aa61c86fa983ddcbbd5e30a2141d2e89081a/production/ksonnet/loki/common.libsonnet#L19
+1. Change the name of `grpc` port to `grpclb`. This is used by the grpc load balancing strategy which relies on SRV records. Otherwise the `querier` will not be able to reach the `query-frontend`. See https://github.com/agardiman/loki/blob/0116aa61c86fa983ddcbbd5e30a2141d2e89081a/production/ksonnet/loki/common.libsonnet#L19
 and
 https://grpc.github.io/grpc/core/md_doc_load-balancing.html
 3. Set the `appProtocol` of `grpclb` to `tcp`

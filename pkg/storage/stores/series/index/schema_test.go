@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/querier/astmapper"
-	"github.com/grafana/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/querier/astmapper"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
 )
 
 func TestDailyBuckets(t *testing.T) {

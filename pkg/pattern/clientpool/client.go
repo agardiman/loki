@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/util/server"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/util/server"
 
 	"github.com/grafana/dskit/grpcclient"
 	"github.com/grafana/dskit/middleware"

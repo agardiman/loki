@@ -21,10 +21,10 @@ import (
 	"golang.org/x/net/context"
 	"golang.org/x/time/rate"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/util"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/util"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 const (

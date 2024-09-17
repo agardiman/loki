@@ -8,8 +8,8 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/grafana/loki/v3/pkg/distributor/shardstreams"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/distributor/shardstreams"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 const (

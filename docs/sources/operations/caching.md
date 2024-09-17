@@ -19,7 +19,7 @@ cache is configured to be in-memory by default.
 
 - It is recommended to deploy three, or in the case of the Helm chart two, dedicated Memcached clusters.
 - As of 2023-02-01, the `memcached:1.6.17-alpine` version of the library is recommended.
-- Consult the Loki ksonnet [memcached](https://github.com/grafana/loki/blob/main/production/ksonnet/loki/memcached.libsonnet) deployment and the ksonnet [memcached library](https://github.com/grafana/jsonnet-libs/tree/master/memcached).
+- Consult the Loki ksonnet [memcached](https://github.com/agardiman/loki/blob/main/production/ksonnet/loki/memcached.libsonnet) deployment and the ksonnet [memcached library](https://github.com/grafana/jsonnet-libs/tree/master/memcached).
 
 ## Steps
 

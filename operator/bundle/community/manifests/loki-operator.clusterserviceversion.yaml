@@ -155,7 +155,7 @@ metadata:
       and management of Loki and related logging components.
     operators.operatorframework.io/builder: operator-sdk-unknown
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-    repository: https://github.com/grafana/loki/tree/main/operator
+    repository: https://github.com/agardiman/loki/tree/main/operator
     support: Grafana Loki SIG Operator
   labels:
     operatorframework.io/arch.amd64: supported

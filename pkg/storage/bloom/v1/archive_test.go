@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
 )
 
 func TestArchive(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"github.com/prometheus/common/model"
 	"go.uber.org/atomic"
 
-	iter "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/util/spanlogger"
+	iter "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/util/spanlogger"
 )
 
 type Request struct {

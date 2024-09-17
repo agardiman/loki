@@ -81,7 +81,7 @@ All other CLI arguments (and their YAML counterparts) prefixed with `-bloom-comp
 {{% admonition type="note" %}}
 If you have questions about upgrading to Loki 3.0, please join us on the [community Slack(https://slack.grafana.com/) in the `#loki-3` channel.
 
-Or leave a comment on this [Github Issue](https://github.com/grafana/loki/issues/12506).
+Or leave a comment on this [Github Issue](https://github.com/agardiman/loki/issues/12506).
 {{% /admonition %}}
 
 Loki 3.0 is a major version increase and comes with several breaking changes.
@@ -590,7 +590,7 @@ To meet both these requirements, we have made the following changes:
 * Changed the existing `query-frontend` Kubernetes service from headless to load-balanced to have a fair load distribution on all the Query Frontend instances.
 * Added `query-frontend-headless` to discover QF pod IPs from queriers to connect as workers.
 
-If you are deploying Loki with Query Scheduler by setting [query_scheduler_enabled](https://github.com/grafana/loki/blob/cc4ab7487ab3cd3b07c63601b074101b0324083b/production/ksonnet/loki/config.libsonnet#L18) config to `true`, then there is nothing to do here for this change.
+If you are deploying Loki with Query Scheduler by setting [query_scheduler_enabled](https://github.com/agardiman/loki/blob/cc4ab7487ab3cd3b07c63601b074101b0324083b/production/ksonnet/loki/config.libsonnet#L18) config to `true`, then there is nothing to do here for this change.
 If you are not using Query Scheduler, then to avoid any issues on the Read path until the rollout finishes, it would be good to follow below steps:
 * Create just the `query-frontend-headless` service without applying any changes to the `query-frontend` service.
 * Rollout changes to `queriers`.
@@ -662,7 +662,7 @@ This value now defaults to 3100, so the Loki process doesn't require special pri
 
 #### docker-compose setup has been updated
 
-The docker-compose [setup](https://github.com/grafana/loki/blob/main/production/docker) has been updated to **v2.6.0** and includes many improvements.
+The docker-compose [setup](https://github.com/agardiman/loki/blob/main/production/docker) has been updated to **v2.6.0** and includes many improvements.
 
 Notable changes include:
 - authentication (multi-tenancy) is **enabled** by default; you can disable it in `production/docker/config/loki.yaml` by setting `auth_enabled: false`
@@ -706,7 +706,7 @@ The `gcp_push_target_parsing_errors_total` GCP Push Target metrics has been adde
 
 #### Windows event logs: now correctly includes `user_data`
 
-The contents of the `user_data` field was erroneously set to the same value as `event_data` in previous versions. This was fixed in [#7461](https://github.com/grafana/loki/pull/7461) and log queries relying on this broken behaviour may be impacted.
+The contents of the `user_data` field was erroneously set to the same value as `event_data` in previous versions. This was fixed in [#7461](https://github.com/agardiman/loki/pull/7461) and log queries relying on this broken behaviour may be impacted.
 
 ## 2.6.0
 
@@ -714,7 +714,7 @@ The contents of the `user_data` field was erroneously set to the same value as `
 
 #### Implementation of unwrapped `rate` aggregation changed
 
-The implementation of the `rate()` aggregation function changed back to the previous implemention prior to [#5013](https://github.com/grafana/loki/pulls/5013).
+The implementation of the `rate()` aggregation function changed back to the previous implemention prior to [#5013](https://github.com/agardiman/loki/pulls/5013).
 This means that the rate per second is calculated based on the sum of the extracted values, instead of the average increase over time.
 
 If you want the extracted values to be treated as [Counter](https://prometheus.io/docs/concepts/metric_types/#counter) metric, you should use the new `rate_counter()` aggregation function, which calculates the per-second average rate of increase of the vector.
@@ -863,7 +863,7 @@ See the [retention docs](https://grafana.com/docs/loki/<LOKI_VERSION>/operations
 
 #### Log messages on startup: proto: duplicate proto type registered:
 
-PR [#3842](https://github.com/grafana/loki/pull/3842) **cyriltovena**: Fork cortex chunk storage into Loki.
+PR [#3842](https://github.com/agardiman/loki/pull/3842) **cyriltovena**: Fork cortex chunk storage into Loki.
 
 Since Cortex doesn't plan to use the `chunk` package anymore, we decided to fork it into our storage package to
 be able to evolve and modify it easily. However, as a side-effect, we still vendor Cortex which includes this forked
@@ -880,7 +880,7 @@ The messages are harmless and we will work to remove them in the future.
 
 #### Change of some default limits to common values
 
-PR [4415](https://github.com/grafana/loki/pull/4415) **DylanGuedes**: the default value of some limits were changed to protect users from overwhelming their cluster with ingestion load caused by relying on default configs.
+PR [4415](https://github.com/agardiman/loki/pull/4415) **DylanGuedes**: the default value of some limits were changed to protect users from overwhelming their cluster with ingestion load caused by relying on default configs.
 
 We suggest you double check if the following parameters are
 present in your Loki config: `ingestion_rate_strategy`, `max_global_streams_per_user`
@@ -947,7 +947,7 @@ query_range:
 
 #### Ingester Lifecycler `final_sleep` now defaults to `0s`
 
-* [4608](https://github.com/grafana/loki/pull/4608) **trevorwhitney**: Change default value of ingester lifecycler's `final_sleep` from `30s` to `0s`
+* [4608](https://github.com/agardiman/loki/pull/4608) **trevorwhitney**: Change default value of ingester lifecycler's `final_sleep` from `30s` to `0s`
 
 This final sleep exists to keep Loki running for long enough to get one final Prometheus scrape before shutting down, however it also causes Loki to sit idle for 30s on shutdown which is an annoying experience for many people.
 
@@ -955,9 +955,9 @@ We decided the default would be better to disable this sleep behavior but anyone
 
 #### Ingester WAL now defaults to on, and chunk transfers are disabled by default
 
-* [4543](https://github.com/grafana/loki/pull/4543) **trevorwhitney**: Change more default values and improve application of common storage config
-* [4629](https://github.com/grafana/loki/pull/4629) **owen-d**: Default the WAL to enabled in the Loki jsonnet library
-* [4624](https://github.com/grafana/loki/pull/4624) **chaudum**: Disable chunk transfers in jsonnet lib
+* [4543](https://github.com/agardiman/loki/pull/4543) **trevorwhitney**: Change more default values and improve application of common storage config
+* [4629](https://github.com/agardiman/loki/pull/4629) **owen-d**: Default the WAL to enabled in the Loki jsonnet library
+* [4624](https://github.com/agardiman/loki/pull/4624) **chaudum**: Disable chunk transfers in jsonnet lib
 
 This changes a few default values, resulting in the ingester WAL now being on by default,
 and chunk transfer retries are disabled by default. Note, this now means Loki will depend on local disk by default for its WAL (write ahead log) directory. This defaults to `wal` but can be overridden via the `--ingester.wal-dir` or via `path_prefix` in the common configuration section. Below are config snippets with the previous defaults, and another with the new values.
@@ -981,7 +981,7 @@ ingester:
 Using the write ahead log (WAL) is recommended and is now the default. However using the WAL is incompatible with chunk transfers, if you have explicitly configured `ingester.max-transfer-retries` to a non-zero value, you must set it to 0 to disable transfers.
 
 #### Memberlist config now automatically applies to all non-configured rings
-* [4400](https://github.com/grafana/loki/pull/4400) **trevorwhitney**: Config: automatically apply memberlist config too all rings when provided
+* [4400](https://github.com/agardiman/loki/pull/4400) **trevorwhitney**: Config: automatically apply memberlist config too all rings when provided
 
 This change affects the behavior of the ingester, distributor, and ruler rings. Previously, if you wanted to use memberlist for all of these rings, you
 had to provide a `memberlist` configuration as well as specify `store: memberlist` for the `kvstore` of each of the rings you wanted to use memberlist.
@@ -1023,7 +1023,7 @@ ruler:
 ```
 
 #### Changed defaults for some GRPC server settings
-* [4435](https://github.com/grafana/loki/pull/4435) **trevorwhitney**: Change default values for two GRPC settings so querier can connect to frontend/scheduler
+* [4435](https://github.com/agardiman/loki/pull/4435) **trevorwhitney**: Change default values for two GRPC settings so querier can connect to frontend/scheduler
 
 This changes two default values, `grpc_server_min_time_between_pings` and `grpc_server_ping_without_stream_allowed` used by the GRPC server.
 
@@ -1041,11 +1041,11 @@ server:
   grpc_server_ping_without_stream_allowed: true
 ```
 
-[This issue](https://github.com/grafana/loki/issues/4375) has some more information on the change.
+[This issue](https://github.com/agardiman/loki/issues/4375) has some more information on the change.
 
 #### Some metric prefixes have changed from `cortex_` to `loki_`
 
-* [#3842](https://github.com/grafana/loki/pull/3842)/[#4253](https://github.com/grafana/loki/pull/4253) **jordanrushing**: Metrics related to chunk storage and runtime config have changed their prefixes from `cortex_` to `loki_`.
+* [#3842](https://github.com/agardiman/loki/pull/3842)/[#4253](https://github.com/agardiman/loki/pull/4253) **jordanrushing**: Metrics related to chunk storage and runtime config have changed their prefixes from `cortex_` to `loki_`.
 
 ```
 cortex_runtime_config* -> loki_runtime_config*
@@ -1054,7 +1054,7 @@ cortex_chunks_store* -> loki_chunks_store*
 
 #### Recording rules storage is now durable
 
-* [4344](https://github.com/grafana/loki/pull/4344) **dannykopping**: per-tenant WAL
+* [4344](https://github.com/agardiman/loki/pull/4344) **dannykopping**: per-tenant WAL
 
 Previously, samples generated by recording rules would only be buffered in memory before being remote-written to Prometheus; from this
 version, the `ruler` now writes these samples to a per-tenant Write-Ahead Log for durability. More details about the
@@ -1068,7 +1068,7 @@ The `ruler` now requires persistent storage - see the
 The following changes pertain to upgrading Promtail.
 
 #### Promtail no longer insert `promtail_instance` label when scraping `gcplog` target
-* [4556](https://github.com/grafana/loki/pull/4556) **james-callahan**: Remove `promtail_instance` label that was being added by promtail when scraping `gcplog` target.
+* [4556](https://github.com/agardiman/loki/pull/4556) **james-callahan**: Remove `promtail_instance` label that was being added by promtail when scraping `gcplog` target.
 
 
 ## 2.3.0
@@ -1077,7 +1077,7 @@ The following changes pertain to upgrading Promtail.
 
 #### Query restriction introduced for queries which do not have at least one equality matcher
 
-PR [3216](https://github.com/grafana/loki/pull/3216) **sandeepsukhani**: check for stream selectors to have at least one equality matcher
+PR [3216](https://github.com/agardiman/loki/pull/3216) **sandeepsukhani**: check for stream selectors to have at least one equality matcher
 
 This change now rejects any query which does not contain at least one equality matcher, an example may better illustrate:
 
@@ -1138,7 +1138,7 @@ For 2.0 we eliminated the long deprecated `entry_parser` configuration in Promta
 
 If you did not specify a `pipeline_stages` entry you would be provided with a default which included the `docker` pipeline stage.  This can lead to some very confusing results.
 
-In [3404](https://github.com/grafana/loki/pull/3404), we corrected this behavior
+In [3404](https://github.com/agardiman/loki/pull/3404), we corrected this behavior
 
 **If you are using docker, and any of your `scrape_configs` are missing a `pipeline_stages` definition**, you should add the following to obtain the correct behaviour:
 
@@ -1376,7 +1376,7 @@ To address this we updated the docker image to add the NET_BIND_SERVICE capabili
 which allowed Loki to bind to port 80 as a non root user, so long as the underlying system allowed that
 linux capability.
 
-This has proved to be a problem for many reasons and in PR [2294](https://github.com/grafana/loki/pull/2294/files)
+This has proved to be a problem for many reasons and in PR [2294](https://github.com/agardiman/loki/pull/2294/files)
 the capability was removed.
 
 It is now no longer possible for the Loki to be started with a port less than 1024 with the published docker image.
@@ -1397,7 +1397,7 @@ This will only affect reads(queries) and not writes and only for the duration of
 
 ### IMPORTANT: Scrape config changes to both Helm and Ksonnet will affect labels created by Promtail
 
-PR [2091](https://github.com/grafana/loki/pull/2091) Makes several changes to the Promtail scrape config:
+PR [2091](https://github.com/agardiman/loki/pull/2091) Makes several changes to the Promtail scrape config:
 
 ````
 This is triggered by https://github.com/grafana/jsonnet-libs/pull/261
@@ -1424,7 +1424,7 @@ The following label have been changed in both the Helm and Ksonnet Promtail scra
 
 ### Experimental boltdb-shipper changes
 
-PR [2166](https://github.com/grafana/loki/pull/2166) now forces the index to have a period of exactly `24h`:
+PR [2166](https://github.com/agardiman/loki/pull/2166) now forces the index to have a period of exactly `24h`:
 
 Loki will fail to start with an error if the active schema or upcoming schema are not set to a period of `24h`
 
@@ -1527,7 +1527,7 @@ Following fields were removed from YAML configuration completely: `claim_on_roll
 
 #### Test Your Config
 
-To see if your config needs to change, one way to quickly test is to download a 1.5.0 (or newer) binary from the [release page](https://github.com/grafana/loki/releases/tag/v1.5.0)
+To see if your config needs to change, one way to quickly test is to download a 1.5.0 (or newer) binary from the [release page](https://github.com/agardiman/loki/releases/tag/v1.5.0)
 
 Then run the binary providing your config file `./loki-linux-amd64 -config.file=myconfig.yaml`
 
@@ -1607,7 +1607,7 @@ exit
 docker run -d --name=loki --mount source=loki-data,target=/loki -p 3100:3100 grafana/loki:1.5.0
 ```
 
-Notice the change in the `target=/loki` for 1.5.0 to the new data directory location specified in the [included Loki config file](https://github.com/grafana/loki/blob/main/cmd/loki/loki-docker-config.yaml).
+Notice the change in the `target=/loki` for 1.5.0 to the new data directory location specified in the [included Loki config file](https://github.com/agardiman/loki/blob/main/cmd/loki/loki-docker-config.yaml).
 
 The intermediate step of using an ubuntu image to change the ownership of the Loki files to the new user might not be necessary if you can easily access these files to run the `chown` command directly.
 That is if you have access to `/var/lib/docker/volumes` or if you mounted to a different local filesystem directory, you can change the ownership directly without using a container.
@@ -1696,7 +1696,7 @@ OR
 1. Proceed with upgrading to v1.4.0
 1. Remove the config option (only do this after everything is running v1.4.0)
 
-It is also possible to enable this flag via config file, see the [`lifecycler_config`](https://github.com/grafana/loki/tree/v1.3.0/docs/configuration#lifecycler_config) configuration option.
+It is also possible to enable this flag via config file, see the [`lifecycler_config`](https://github.com/agardiman/loki/tree/v1.3.0/docs/configuration#lifecycler_config) configuration option.
 
 If using the Helm Loki chart:
 
@@ -1715,7 +1715,7 @@ loki:
 
 #### What will go wrong
 
-If you attempt to add a v1.4.0 ingester to a ring created by Loki v1.2.0 or older which does not have the commandline argument `-ingester.normalise-tokens=true` (or configured via [config file](https://github.com/grafana/loki/tree/v1.3.0/docs/configuration#lifecycler_config)), the v1.4.0 ingester will remove all the entries in the ring for all the other ingesters as it cannot "see" them.
+If you attempt to add a v1.4.0 ingester to a ring created by Loki v1.2.0 or older which does not have the commandline argument `-ingester.normalise-tokens=true` (or configured via [config file](https://github.com/agardiman/loki/tree/v1.3.0/docs/configuration#lifecycler_config)), the v1.4.0 ingester will remove all the entries in the ring for all the other ingesters as it cannot "see" them.
 
 This will result in distributors failing to write and a general ingestion failure for the system.
 

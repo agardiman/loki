@@ -33,7 +33,7 @@ The configuration runs Loki as a single binary.
 
 ## Install manually
 
-1. Browse to the [release page](https://github.com/grafana/loki/releases/).
+1. Browse to the [release page](https://github.com/agardiman/loki/releases/).
 1. Find the **Assets** section for the version that you want to install.
 1. Download the Loki and Promtail archive files that correspond to your system.
 
@@ -76,7 +76,7 @@ To do so with Promtail, refer to the [Promtail configuration]({{< relref "../../
 ## Release binaries - openSUSE Linux only
 
 Every release includes binaries for Loki.
-You can find them on the [Releases page](https://github.com/grafana/loki/releases).
+You can find them on the [Releases page](https://github.com/agardiman/loki/releases).
 
 ## Community openSUSE Linux packages
 

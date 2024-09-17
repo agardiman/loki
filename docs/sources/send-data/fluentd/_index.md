@@ -12,7 +12,7 @@ The [Fluentd output plugin](https://www.fluentd.org/) for Grafana Loki is called
 `fluent-plugin-grafana-loki` that enables shipping logs to a private Loki
 instance or [Grafana Cloud](/products/cloud/).
 
-The plugin source code is in the [fluentd directory of the repository](https://github.com/grafana/loki/tree/main/clients/cmd/fluentd).
+The plugin source code is in the [fluentd directory of the repository](https://github.com/agardiman/loki/tree/main/clients/cmd/fluentd).
 
 {{< youtube id="s43IBSVyTpQ" >}}
 
@@ -28,7 +28,7 @@ fluent-gem install fluent-plugin-grafana-loki
 
 ## Docker Image
 
-The Docker image `grafana/fluent-plugin-loki:main` contains [default configuration files](https://github.com/grafana/loki/tree/main/clients/cmd/fluentd/docker/conf). By default, fluentd containers use that default configuration. You can instead specify your `fluentd.conf` configuration file with a `FLUENTD_CONF` environment variable.
+The Docker image `grafana/fluent-plugin-loki:main` contains [default configuration files](https://github.com/agardiman/loki/tree/main/clients/cmd/fluentd/docker/conf). By default, fluentd containers use that default configuration. You can instead specify your `fluentd.conf` configuration file with a `FLUENTD_CONF` environment variable.
 
 This image also uses `LOKI_URL`, `LOKI_USERNAME`, and `LOKI_PASSWORD` environment variables to specify the Loki endpoint, user, and password (you can leave the USERNAME and PASSWORD blank if they're not used).
 

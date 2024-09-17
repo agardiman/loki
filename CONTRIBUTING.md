@@ -126,8 +126,8 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/pkg/labels"
 
-	"github.com/grafana/loki/pkg/logproto"
-	"github.com/grafana/loki/pkg/logql"
+	"github.com/agardiman/loki/pkg/logproto"
+	"github.com/agardiman/loki/pkg/logql"
 )
 ```
 

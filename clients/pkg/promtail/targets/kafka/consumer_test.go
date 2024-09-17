@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/target"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/target"
 )
 
 type DiscovererFn func(sarama.ConsumerGroupSession, sarama.ConsumerGroupClaim) (RunnableTarget, error)

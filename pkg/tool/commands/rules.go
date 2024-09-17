@@ -15,10 +15,10 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 	yamlv3 "gopkg.in/yaml.v3"
 
-	"github.com/grafana/loki/v3/pkg/tool/client"
-	"github.com/grafana/loki/v3/pkg/tool/printer"
-	"github.com/grafana/loki/v3/pkg/tool/rules"
-	"github.com/grafana/loki/v3/pkg/tool/rules/rwrulefmt"
+	"github.com/agardiman/loki/v3/pkg/tool/client"
+	"github.com/agardiman/loki/v3/pkg/tool/printer"
+	"github.com/agardiman/loki/v3/pkg/tool/rules"
+	"github.com/agardiman/loki/v3/pkg/tool/rules/rwrulefmt"
 )
 
 const (

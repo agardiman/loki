@@ -14,9 +14,9 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/lokifrontend/frontend/v1/frontendv1pb"
-	querier_stats "github.com/grafana/loki/v3/pkg/querier/stats"
-	httpgrpcutil "github.com/grafana/loki/v3/pkg/util/httpgrpc"
+	"github.com/agardiman/loki/v3/pkg/lokifrontend/frontend/v1/frontendv1pb"
+	querier_stats "github.com/agardiman/loki/v3/pkg/querier/stats"
+	httpgrpcutil "github.com/agardiman/loki/v3/pkg/util/httpgrpc"
 )
 
 var (

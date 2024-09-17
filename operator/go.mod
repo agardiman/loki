@@ -1,4 +1,4 @@
-module github.com/grafana/loki/operator
+module github.com/agardiman/loki/operator
 
 go 1.21
 
@@ -8,7 +8,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.4.0
 	github.com/grafana/loki v1.6.2-0.20230403212622-90888a0cc737
-	github.com/grafana/loki/operator/apis/loki v0.0.0-00010101000000-000000000000
+	github.com/agardiman/loki/operator/apis/loki v0.0.0-00010101000000-000000000000
 	github.com/imdario/mergo v0.3.16
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.7.0
 	github.com/openshift/api v0.0.0-20240228005710-4511c790cc60 // release-4.15
@@ -69,7 +69,7 @@ require (
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/grafana/dskit v0.0.0-20230201083518-528d8a7d52f2 // indirect
-	github.com/grafana/loki/pkg/push v0.0.0-20230127102416-571f88bc5765 // indirect
+	github.com/agardiman/loki/pkg/push v0.0.0-20230127102416-571f88bc5765 // indirect
 	github.com/grafana/regexp v0.0.0-20221122212121-6b5c0a4cb7fd // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0 // indirect
 	github.com/hashicorp/consul/api v1.26.1 // indirect
@@ -160,7 +160,7 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
 
-replace github.com/grafana/loki/operator/apis/loki => ./apis/loki
+replace github.com/agardiman/loki/operator/apis/loki => ./apis/loki
 
 // Replace v2.4.0+incompatible indirect refs with v5.1.1 for compatibility with google.golang.org/grpc >=v1.56.3
 replace github.com/sercand/kuberesolver => github.com/sercand/kuberesolver/v5 v5.1.1

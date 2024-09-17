@@ -69,7 +69,7 @@ This workflow will then use a workflow `.github/workflows/operator-reusable-hub-
 
 # Releasing
 
-1. Create a PR to bump the version (i.e https://github.com/grafana/loki/pull/12246), be careful with the commit message;
+1. Create a PR to bump the version (i.e https://github.com/agardiman/loki/pull/12246), be careful with the commit message;
 2. Re-triggering the action `operator-publish-operator-hub` on the release-please PR;
 3. Merging the release-please PR (i.e TBD );
 4. Grafana bot will automatically open a PRs to [k8s-operatorhub/community-operators](https://github.com/k8s-operatorhub/community-operators) and [redhat-openshift-ecosystem/community-operators-prod](https://github.com/redhat-openshift-ecosystem/community-operators-prod);

@@ -3,11 +3,11 @@ package index
 import (
 	"log"
 
-	"github.com/grafana/loki/v3/pkg/logcli/client"
-	"github.com/grafana/loki/v3/pkg/logcli/output"
-	"github.com/grafana/loki/v3/pkg/logcli/print"
-	"github.com/grafana/loki/v3/pkg/logcli/volume"
-	"github.com/grafana/loki/v3/pkg/loghttp"
+	"github.com/agardiman/loki/v3/pkg/logcli/client"
+	"github.com/agardiman/loki/v3/pkg/logcli/output"
+	"github.com/agardiman/loki/v3/pkg/logcli/print"
+	"github.com/agardiman/loki/v3/pkg/logcli/volume"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
 )
 
 // GetVolume executes a volume query and prints the results

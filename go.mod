@@ -1,4 +1,4 @@
-module github.com/grafana/loki/v3
+module github.com/agardiman/loki/v3
 
 go 1.21.8
 
@@ -124,7 +124,7 @@ require (
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/gogo/googleapis v1.4.1
 	github.com/grafana/jsonparser v0.0.0-20240425183733-ea80629e1a32
-	github.com/grafana/loki/pkg/push v0.0.0-20231124142027-e52380921608
+	github.com/agardiman/loki/pkg/push v0.0.0-20231124142027-e52380921608
 	github.com/hashicorp/golang-lru/v2 v2.0.7
 	github.com/hashicorp/raft v1.7.1
 	github.com/hashicorp/raft-wal v0.4.1
@@ -390,7 +390,7 @@ replace github.com/hashicorp/memberlist => github.com/grafana/memberlist v0.3.1-
 // Insist on the optimised version of grafana/regexp
 replace github.com/grafana/regexp => github.com/grafana/regexp v0.0.0-20240518133315-a468a5bfb3bc
 
-replace github.com/grafana/loki/pkg/push => ./pkg/push
+replace github.com/agardiman/loki/pkg/push => ./pkg/push
 
 // leodido fork his project to continue support
 replace github.com/influxdata/go-syslog/v3 => github.com/leodido/go-syslog/v4 v4.1.0

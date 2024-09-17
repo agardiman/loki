@@ -8,16 +8,16 @@ import (
 	"github.com/go-kit/log/level"
 	"gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/limit"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/positions"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/scrapeconfig"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/server"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/file"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/wal"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/limit"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/positions"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/scrapeconfig"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/server"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/file"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/wal"
 
-	"github.com/grafana/loki/v3/pkg/tracing"
-	"github.com/grafana/loki/v3/pkg/util/flagext"
+	"github.com/agardiman/loki/v3/pkg/tracing"
+	"github.com/agardiman/loki/v3/pkg/util/flagext"
 )
 
 // Options contains cross-cutting promtail configurations

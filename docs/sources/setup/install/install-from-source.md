@@ -32,4 +32,4 @@ set your `$GOPATH` environment variable
     make loki
     ```
 
-The built executable will be in `$GOPATH/src/github.com/grafana/loki/cmd/loki/loki`.
+The built executable will be in `$GOPATH/src/github.com/agardiman/loki/cmd/loki/loki`.

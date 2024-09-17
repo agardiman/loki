@@ -40,7 +40,7 @@ Before start patching vulnerabilities, know what are you patching. It can be one
 
 	1. Pick all the Go dependencies that need to be patched.
 
-	1. Check if [dependabot already patched the dependency](https://github.com/grafana/loki/pulls?q=is%3Apr+label%3Adependencies+is%3Aclosed) or [have a PR opened to patch](https://github.com/grafana/loki/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) . If not, manually upgrade the package on the `main` branch as follows.
+	1. Check if [dependabot already patched the dependency](https://github.com/agardiman/loki/pulls?q=is%3Apr+label%3Adependencies+is%3Aclosed) or [have a PR opened to patch](https://github.com/agardiman/loki/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) . If not, manually upgrade the package on the `main` branch as follows.
 
 		```shell
 		go get -u -v <package-path>@<patched-version>
@@ -55,6 +55,6 @@ Before start patching vulnerabilities, know what are you patching. It can be one
 
 1. Patch Grafana Loki Docker dependencies, for example: Alphine Linux base images).
 
-   1. Update Docker image version. [Example PR](https://github.com/grafana/loki/pull/10573).
+   1. Update Docker image version. [Example PR](https://github.com/agardiman/loki/pull/10573).
 
    1. [Backport]({{< relref "./backport-commits" >}}) to `release-$VERSION_PREFIX` branch

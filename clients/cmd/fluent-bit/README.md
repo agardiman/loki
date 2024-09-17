@@ -5,7 +5,7 @@
 This plugin is implemented with [Fluent Bit's Go plugin](https://github.com/fluent/fluent-bit-go) interface. It pushes logs to Loki using a GRPC connection.
 
 > **Warning**
-> `syslog` and `systemd` input plugins have not been tested yet. Feedback appreciated, file [an issue](https://github.com/grafana/loki/issues/new?template=bug_report.md) if you encounter any misbehaviors.
+> `syslog` and `systemd` input plugins have not been tested yet. Feedback appreciated, file [an issue](https://github.com/agardiman/loki/issues/new?template=bug_report.md) if you encounter any misbehaviors.
 
 ## Building
 

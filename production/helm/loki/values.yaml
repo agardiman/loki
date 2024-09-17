@@ -1332,7 +1332,7 @@ write:
     targetMemoryUtilizationPercentage:
     # -- Behavior policies while scaling.
     behavior:
-      # -- see https://github.com/grafana/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown for scaledown details
+      # -- see https://github.com/agardiman/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown for scaledown details
       scaleUp:
         policies:
           - type: Pods
@@ -1380,7 +1380,7 @@ write:
   # scaledown process so it's added to the template by default when autoscaling is enabled,
   # but it's disabled to optimize rolling restarts in instances that will never be scaled
   # down or when using chunks storage with WAL disabled.
-  # https://github.com/grafana/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown
+  # https://github.com/agardiman/loki/blob/main/docs/sources/operations/storage/wal.md#how-to-scale-updown
   # -- Init containers to add to the write pods
   initContainers: []
   # -- Containers to add to the write pods

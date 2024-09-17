@@ -21,13 +21,13 @@ import (
 
 	ring_client "github.com/grafana/dskit/ring/client"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/pattern/aggregation"
-	"github.com/grafana/loki/v3/pkg/pattern/clientpool"
-	"github.com/grafana/loki/v3/pkg/pattern/drain"
-	"github.com/grafana/loki/v3/pkg/pattern/iter"
-	"github.com/grafana/loki/v3/pkg/util"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/pattern/aggregation"
+	"github.com/agardiman/loki/v3/pkg/pattern/clientpool"
+	"github.com/agardiman/loki/v3/pkg/pattern/drain"
+	"github.com/agardiman/loki/v3/pkg/pattern/iter"
+	"github.com/agardiman/loki/v3/pkg/util"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 const readBatchSize = 1024

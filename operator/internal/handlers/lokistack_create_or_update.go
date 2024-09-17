@@ -15,16 +15,16 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	ctrlutil "sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	configv1 "github.com/grafana/loki/operator/apis/config/v1"
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/external/k8s"
-	"github.com/grafana/loki/operator/internal/handlers/internal/gateway"
-	"github.com/grafana/loki/operator/internal/handlers/internal/rules"
-	"github.com/grafana/loki/operator/internal/handlers/internal/serviceaccounts"
-	"github.com/grafana/loki/operator/internal/handlers/internal/storage"
-	"github.com/grafana/loki/operator/internal/handlers/internal/tlsprofile"
-	"github.com/grafana/loki/operator/internal/manifests"
-	"github.com/grafana/loki/operator/internal/status"
+	configv1 "github.com/agardiman/loki/operator/apis/config/v1"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/external/k8s"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/gateway"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/rules"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/serviceaccounts"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/storage"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/tlsprofile"
+	"github.com/agardiman/loki/operator/internal/manifests"
+	"github.com/agardiman/loki/operator/internal/status"
 )
 
 // CreateOrUpdateLokiStack handles LokiStack create and update events.

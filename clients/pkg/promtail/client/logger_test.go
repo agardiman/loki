@@ -9,10 +9,10 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 func TestNewLogger(t *testing.T) {

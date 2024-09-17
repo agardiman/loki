@@ -13,12 +13,12 @@ import (
 	github_com_gogo_protobuf_sortkeys "github.com/gogo/protobuf/sortkeys"
 	_ "github.com/gogo/protobuf/types"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-	_ "github.com/grafana/loki/pkg/push"
-	github_com_grafana_loki_pkg_push "github.com/grafana/loki/pkg/push"
-	github_com_grafana_loki_v3_pkg_logql_syntax "github.com/grafana/loki/v3/pkg/logql/syntax"
-	stats "github.com/grafana/loki/v3/pkg/logqlmodel/stats"
-	github_com_grafana_loki_v3_pkg_querier_plan "github.com/grafana/loki/v3/pkg/querier/plan"
-	resultscache "github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
+	_ "github.com/agardiman/loki/pkg/push"
+	github_com_grafana_loki_pkg_push "github.com/agardiman/loki/pkg/push"
+	github_com_grafana_loki_v3_pkg_logql_syntax "github.com/agardiman/loki/v3/pkg/logql/syntax"
+	stats "github.com/agardiman/loki/v3/pkg/logqlmodel/stats"
+	github_com_grafana_loki_v3_pkg_querier_plan "github.com/agardiman/loki/v3/pkg/querier/plan"
+	resultscache "github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
 	github_com_prometheus_common_model "github.com/prometheus/common/model"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -312,7 +312,7 @@ type QueryRequest struct {
 	Direction Direction                                              `protobuf:"varint,5,opt,name=direction,proto3,enum=logproto.Direction" json:"direction,omitempty"`
 	Shards    []string                                               `protobuf:"bytes,7,rep,name=shards,proto3" json:"shards,omitempty"`
 	Deletes   []*Delete                                              `protobuf:"bytes,8,rep,name=deletes,proto3" json:"deletes,omitempty"`
-	Plan      *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,9,opt,name=plan,proto3,customtype=github.com/grafana/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
+	Plan      *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,9,opt,name=plan,proto3,customtype=github.com/agardiman/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
 	// If populated, these represent the chunk references that the querier should
 	// use to fetch the data, plus any other chunks reported by ingesters.
 	StoreChunks *ChunkRefGroup `protobuf:"bytes,10,opt,name=storeChunks,proto3" json:"storeChunks"`
@@ -413,7 +413,7 @@ type SampleQueryRequest struct {
 	End      time.Time                                              `protobuf:"bytes,3,opt,name=end,proto3,stdtime" json:"end"`
 	Shards   []string                                               `protobuf:"bytes,4,rep,name=shards,proto3" json:"shards,omitempty"`
 	Deletes  []*Delete                                              `protobuf:"bytes,5,rep,name=deletes,proto3" json:"deletes,omitempty"`
-	Plan     *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,6,opt,name=plan,proto3,customtype=github.com/grafana/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
+	Plan     *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,6,opt,name=plan,proto3,customtype=github.com/agardiman/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
 	// If populated, these represent the chunk references that the querier should
 	// use to fetch the data, plus any other chunks reported by ingesters.
 	StoreChunks *ChunkRefGroup `protobuf:"bytes,10,opt,name=storeChunks,proto3" json:"storeChunks"`
@@ -598,7 +598,7 @@ func (m *Delete) GetEnd() int64 {
 }
 
 type QueryResponse struct {
-	Streams  []github_com_grafana_loki_pkg_push.Stream `protobuf:"bytes,1,rep,name=streams,proto3,customtype=github.com/grafana/loki/pkg/push.Stream" json:"streams,omitempty"`
+	Streams  []github_com_grafana_loki_pkg_push.Stream `protobuf:"bytes,1,rep,name=streams,proto3,customtype=github.com/agardiman/loki/pkg/push.Stream" json:"streams,omitempty"`
 	Stats    stats.Ingester                            `protobuf:"bytes,2,opt,name=stats,proto3" json:"stats"`
 	Warnings []string                                  `protobuf:"bytes,3,rep,name=warnings,proto3" json:"warnings,omitempty"`
 }
@@ -994,7 +994,7 @@ type TailRequest struct {
 	DelayFor uint32                                                 `protobuf:"varint,3,opt,name=delayFor,proto3" json:"delayFor,omitempty"`
 	Limit    uint32                                                 `protobuf:"varint,4,opt,name=limit,proto3" json:"limit,omitempty"`
 	Start    time.Time                                              `protobuf:"bytes,5,opt,name=start,proto3,stdtime" json:"start"`
-	Plan     *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,6,opt,name=plan,proto3,customtype=github.com/grafana/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
+	Plan     *github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan `protobuf:"bytes,6,opt,name=plan,proto3,customtype=github.com/agardiman/loki/v3/pkg/querier/plan.QueryPlan" json:"plan,omitempty"`
 }
 
 func (m *TailRequest) Reset()      { *m = TailRequest{} }
@@ -1059,7 +1059,7 @@ func (m *TailRequest) GetStart() time.Time {
 }
 
 type TailResponse struct {
-	Stream         *github_com_grafana_loki_pkg_push.Stream `protobuf:"bytes,1,opt,name=stream,proto3,customtype=github.com/grafana/loki/pkg/push.Stream" json:"stream,omitempty"`
+	Stream         *github_com_grafana_loki_pkg_push.Stream `protobuf:"bytes,1,opt,name=stream,proto3,customtype=github.com/agardiman/loki/pkg/push.Stream" json:"stream,omitempty"`
 	DroppedStreams []*DroppedStream                         `protobuf:"bytes,2,rep,name=droppedStreams,proto3" json:"droppedStreams,omitempty"`
 }
 
@@ -1965,8 +1965,8 @@ type GetChunkRefRequest struct {
 	Through  github_com_prometheus_common_model.Time `protobuf:"varint,2,opt,name=through,proto3,customtype=github.com/prometheus/common/model.Time" json:"through"`
 	Matchers string                                  `protobuf:"bytes,3,opt,name=matchers,proto3" json:"matchers,omitempty"`
 	// TODO(salvacorts): Delete this field once the weekly release is done.
-	Filters []github_com_grafana_loki_v3_pkg_logql_syntax.LineFilter `protobuf:"bytes,4,rep,name=filters,proto3,customtype=github.com/grafana/loki/v3/pkg/logql/syntax.LineFilter" json:"filters"`
-	Plan    github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan    `protobuf:"bytes,5,opt,name=plan,proto3,customtype=github.com/grafana/loki/v3/pkg/querier/plan.QueryPlan" json:"plan"`
+	Filters []github_com_grafana_loki_v3_pkg_logql_syntax.LineFilter `protobuf:"bytes,4,rep,name=filters,proto3,customtype=github.com/agardiman/loki/v3/pkg/logql/syntax.LineFilter" json:"filters"`
+	Plan    github_com_grafana_loki_v3_pkg_querier_plan.QueryPlan    `protobuf:"bytes,5,opt,name=plan,proto3,customtype=github.com/agardiman/loki/v3/pkg/querier/plan.QueryPlan" json:"plan"`
 }
 
 func (m *GetChunkRefRequest) Reset()      { *m = GetChunkRefRequest{} }

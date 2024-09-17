@@ -18,7 +18,7 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/grafana/loki/operator/internal/manifests/internal/gateway"
+	"github.com/agardiman/loki/operator/internal/manifests/internal/gateway"
 )
 
 const (

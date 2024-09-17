@@ -1,4 +1,4 @@
-module github.com/grafana/loki/operator/apis/loki
+module github.com/agardiman/loki/operator/apis/loki
 
 go 1.19
 

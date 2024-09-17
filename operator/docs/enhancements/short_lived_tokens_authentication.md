@@ -349,7 +349,7 @@ __Note:__ The workload identity pool and associated OIDC provider needs to be th
 
 ## Implementation History
 
-- AWS Support https://github.com/grafana/loki/pull/11481
-- GCS Support https://github.com/grafana/loki/pull/11869
-- Azure Support https://github.com/grafana/loki/pull/11802
-- Refactoring https://github.com/grafana/loki/pull/12106
+- AWS Support https://github.com/agardiman/loki/pull/11481
+- GCS Support https://github.com/agardiman/loki/pull/11869
+- Azure Support https://github.com/agardiman/loki/pull/11802
+- Refactoring https://github.com/agardiman/loki/pull/12106

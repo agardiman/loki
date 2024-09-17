@@ -20,9 +20,9 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/model/timestamp"
 
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache/resultscache"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache/resultscache"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 // ToWriteRequest converts matched slices of Labels, Samples and Metadata into a WriteRequest proto.

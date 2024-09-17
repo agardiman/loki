@@ -8,9 +8,9 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 var pipelineStagesStructuredMetadataUsingMatch = `

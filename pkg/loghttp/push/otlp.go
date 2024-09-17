@@ -18,10 +18,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/plog/plogotlp"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	loki_util "github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	loki_util "github.com/agardiman/loki/v3/pkg/util"
 )
 
 const (

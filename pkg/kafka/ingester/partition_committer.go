@@ -11,7 +11,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/twmb/franz-go/pkg/kadm"
 
-	"github.com/grafana/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/kafka"
 )
 
 // partitionCommitter is responsible for committing offsets for a specific Kafka partition

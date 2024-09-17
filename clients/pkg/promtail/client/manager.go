@@ -9,9 +9,9 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/limit"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/wal"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/limit"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/wal"
 )
 
 // WriterEventsNotifier implements a notifier that's received by the Manager, to which wal.Watcher can subscribe for
@@ -41,7 +41,7 @@ type Stoppable interface {
 // from the scrape targets, to the remote write clients themselves.
 //
 // Right now it just supports instantiating the WAL writer side of the future-to-be WAL enabled client. In follow-up
-// work, tracked in https://github.com/grafana/loki/issues/8197, this Manager will be responsible for instantiating all client
+// work, tracked in https://github.com/agardiman/loki/issues/8197, this Manager will be responsible for instantiating all client
 // types: Logger, Multi and WAL.
 type Manager struct {
 	name        string

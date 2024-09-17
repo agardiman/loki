@@ -90,7 +90,7 @@ Next we'll download, install and give executable right to [Promtail]({{< relref 
 
 ```bash
 mkdir /opt/promtail && cd /opt/promtail
-curl -O -L "https://github.com/grafana/loki/releases/download/v2.0.0/promtail-linux-amd64.zip"
+curl -O -L "https://github.com/agardiman/loki/releases/download/v2.0.0/promtail-linux-amd64.zip"
 unzip "promtail-linux-amd64.zip"
 chmod a+x "promtail-linux-amd64"
 ```
@@ -290,5 +290,5 @@ Let's head back to Grafana and verify that your Promtail logs are available in G
 [live tailing]: https://grafana.com/docs/grafana/latest/features/datasources/loki/#live-tailing
 [systemd]: ../../../installation/helm#run-promtail-with-systemd-journal-support
 [journald]: https://www.freedesktop.org/software/systemd/man/systemd-journald.service.html
-[final config]: https://github.com/grafana/loki/blob/main/docs/sources/send-data/promtail/cloud/ec2/promtail-ec2-final.yaml
+[final config]: https://github.com/agardiman/loki/blob/main/docs/sources/send-data/promtail/cloud/ec2/promtail-ec2-final.yaml
 [relabeling]: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config

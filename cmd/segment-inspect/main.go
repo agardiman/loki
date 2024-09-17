@@ -11,7 +11,7 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/grafana/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
 )
 
 const format = "2006-01-02 15:04:05.000000 MST"

@@ -12,10 +12,10 @@ import (
 	networkingv1 "k8s.io/api/networking/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	configv1 "github.com/grafana/loki/operator/apis/config/v1"
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/manifests/internal/config"
-	"github.com/grafana/loki/operator/internal/manifests/openshift"
+	configv1 "github.com/agardiman/loki/operator/apis/config/v1"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/manifests/internal/config"
+	"github.com/agardiman/loki/operator/internal/manifests/openshift"
 )
 
 // ApplyGatewayDefaultOptions applies defaults on the LokiStackSpec depending on selected

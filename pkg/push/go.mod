@@ -1,4 +1,4 @@
-module github.com/grafana/loki/pkg/push
+module github.com/agardiman/loki/pkg/push
 
 go 1.19
 

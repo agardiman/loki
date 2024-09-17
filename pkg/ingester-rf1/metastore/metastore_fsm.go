@@ -11,8 +11,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/hashicorp/raft"
 
-	metastorepb "github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/raftlogpb"
+	metastorepb "github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/raftlogpb"
 )
 
 // The map is used to determine the type of the given command,

@@ -7,8 +7,8 @@ import (
 
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/util/math"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/util/math"
 )
 
 const (

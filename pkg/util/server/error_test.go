@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/codes"
 
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
-	storage_errors "github.com/grafana/loki/v3/pkg/storage/errors"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
+	storage_errors "github.com/agardiman/loki/v3/pkg/storage/errors"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 func Test_writeError(t *testing.T) {

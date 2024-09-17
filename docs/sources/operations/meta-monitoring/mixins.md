@@ -104,7 +104,7 @@ This directory contains a compiled version of the alert and recording rules, as 
 
 {{< admonition type="note" >}}
 If you want to change any of the mixins, make your updates in the `production/loki-mixin` directory.
-Use the instructions in the [README](https://github.com/grafana/loki/tree/main/production/loki-mixin) in that directory to regenerate the files.
+Use the instructions in the [README](https://github.com/agardiman/loki/tree/main/production/loki-mixin) in that directory to regenerate the files.
 {{< /admonition >}}
 
 ### Import the dashboards to Grafana

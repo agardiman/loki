@@ -11,15 +11,15 @@ import (
 	"github.com/grafana/dskit/flagext"
 	"github.com/pkg/errors"
 
-	"github.com/grafana/loki/v3/pkg/loki/common"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/types"
-	"github.com/grafana/loki/v3/pkg/util/cfg"
-	lokiring "github.com/grafana/loki/v3/pkg/util/ring"
+	"github.com/agardiman/loki/v3/pkg/loki/common"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/util/cfg"
+	lokiring "github.com/agardiman/loki/v3/pkg/util/ring"
 
-	"github.com/grafana/loki/v3/pkg/ruler/rulestore/local"
-	loki_net "github.com/grafana/loki/v3/pkg/util/net"
+	"github.com/agardiman/loki/v3/pkg/ruler/rulestore/local"
+	loki_net "github.com/agardiman/loki/v3/pkg/util/net"
 )
 
 const versionFlag = "version"

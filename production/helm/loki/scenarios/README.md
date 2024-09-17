@@ -1,6 +1,6 @@
 These scenarios are used by Github Workflow: [Publish Rendered Helm Chart Diff](../../../../.github/workflows/helm-loki-ci.yml). 
 
-Each scenario is used as the values file for the Loki Helm chart to render Kubernetes manifests in `base` and `PR's` branch to compare the content and report the diff on Pull Request as a comment([example](https://github.com/grafana/loki/pull/14127#issuecomment-2348360828)). It gives the ability to the reviewer to understand how the changes in the chart modify resulting manifests.
+Each scenario is used as the values file for the Loki Helm chart to render Kubernetes manifests in `base` and `PR's` branch to compare the content and report the diff on Pull Request as a comment([example](https://github.com/agardiman/loki/pull/14127#issuecomment-2348360828)). It gives the ability to the reviewer to understand how the changes in the chart modify resulting manifests.
 
 ![img.png](images/img.png)
 

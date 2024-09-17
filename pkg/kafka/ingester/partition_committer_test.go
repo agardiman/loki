@@ -14,8 +14,8 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus/testutil"
 
-	"github.com/grafana/loki/v3/pkg/kafka"
-	"github.com/grafana/loki/v3/pkg/kafka/testkafka"
+	"github.com/agardiman/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/kafka/testkafka"
 )
 
 func TestPartitionCommitter(t *testing.T) {

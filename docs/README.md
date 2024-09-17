@@ -16,7 +16,7 @@ We're glad you're here to help make the Loki documentation even better for the L
 
 Issues and contributions are **always welcome**! Don't feel shy about contributing. All input is welcome. No fix is too small.
 
-If the documentation confuses you or you think something is missing in the docs, create an [issue](https://github.com/grafana/loki/issues).
+If the documentation confuses you or you think something is missing in the docs, create an [issue](https://github.com/agardiman/loki/issues).
 If you find something that you think you can fix, please go ahead and contribute a pull request (PR). You don't need to ask permission.
 
 The Loki documentation is written using the CommonMark flavor of markdown, including some extended features. For more information about markdown, you can see the [CommonMark specification](https://spec.commonmark.org/), and a [quick reference guide](https://commonmark.org/help/) for CommonMark.

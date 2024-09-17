@@ -16,14 +16,14 @@ import (
 	"github.com/prometheus/prometheus/tsdb/record"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/distributor/writefailures"
-	"github.com/grafana/loki/v3/pkg/ingester/client"
-	"github.com/grafana/loki/v3/pkg/ingester/wal"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	loki_runtime "github.com/grafana/loki/v3/pkg/runtime"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/distributor/writefailures"
+	"github.com/agardiman/loki/v3/pkg/ingester/client"
+	"github.com/agardiman/loki/v3/pkg/ingester/wal"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	loki_runtime "github.com/agardiman/loki/v3/pkg/runtime"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 type MemoryWALReader struct {

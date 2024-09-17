@@ -5,7 +5,7 @@ import (
 
 	"github.com/axiomhq/hyperloglog"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 type UnmarshaledDetectedField struct {

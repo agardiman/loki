@@ -19,7 +19,7 @@ queries against a Loki instance.
 ### Binary (Recommended)
 
 Download the `logcli` binary from the
-[Loki releases page](https://github.com/grafana/loki/releases).
+[Loki releases page](https://github.com/agardiman/loki/releases).
 
 ### Build LogCLI from source
 

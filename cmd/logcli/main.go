@@ -15,16 +15,16 @@ import (
 	"github.com/prometheus/common/version"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/grafana/loki/v3/pkg/logcli/client"
-	"github.com/grafana/loki/v3/pkg/logcli/detected"
-	"github.com/grafana/loki/v3/pkg/logcli/index"
-	"github.com/grafana/loki/v3/pkg/logcli/labelquery"
-	"github.com/grafana/loki/v3/pkg/logcli/output"
-	"github.com/grafana/loki/v3/pkg/logcli/query"
-	"github.com/grafana/loki/v3/pkg/logcli/seriesquery"
-	"github.com/grafana/loki/v3/pkg/logcli/volume"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	_ "github.com/grafana/loki/v3/pkg/util/build"
+	"github.com/agardiman/loki/v3/pkg/logcli/client"
+	"github.com/agardiman/loki/v3/pkg/logcli/detected"
+	"github.com/agardiman/loki/v3/pkg/logcli/index"
+	"github.com/agardiman/loki/v3/pkg/logcli/labelquery"
+	"github.com/agardiman/loki/v3/pkg/logcli/output"
+	"github.com/agardiman/loki/v3/pkg/logcli/query"
+	"github.com/agardiman/loki/v3/pkg/logcli/seriesquery"
+	"github.com/agardiman/loki/v3/pkg/logcli/volume"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	_ "github.com/agardiman/loki/v3/pkg/util/build"
 )
 
 var (
@@ -620,7 +620,7 @@ func mustParse(t string, defaultTime time.Time) time.Time {
 
 // This method is to duplicate the same logic of `step` value from `start` and `end`
 // done on the loki server side.
-// https://github.com/grafana/loki/blob/main/pkg/loghttp/params.go
+// https://github.com/agardiman/loki/blob/main/pkg/loghttp/params.go
 func defaultQueryRangeStep(start, end time.Time) time.Duration {
 	step := int(math.Max(math.Floor(end.Sub(start).Seconds()/250), 1))
 	return time.Duration(step) * time.Second

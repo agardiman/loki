@@ -16,11 +16,11 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/utils/keymutex"
 
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/util/mempool"
-	"github.com/grafana/loki/v3/pkg/util/spanlogger"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/util/mempool"
+	"github.com/agardiman/loki/v3/pkg/util/spanlogger"
 )
 
 var downloadQueueCapacity = 10000

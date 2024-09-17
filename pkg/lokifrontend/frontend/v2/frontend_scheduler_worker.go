@@ -15,9 +15,9 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/scheduler/schedulerpb"
-	"github.com/grafana/loki/v3/pkg/util"
-	lokiutil "github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/scheduler/schedulerpb"
+	"github.com/agardiman/loki/v3/pkg/util"
+	lokiutil "github.com/agardiman/loki/v3/pkg/util"
 )
 
 type frontendSchedulerWorkers struct {

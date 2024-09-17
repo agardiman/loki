@@ -10,8 +10,8 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	promql_parser "github.com/prometheus/prometheus/promql/parser"
 
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 const (
@@ -267,7 +267,7 @@ func ParseLabels(lbs string) (labels.Labels, error) {
 	// if we can't rely on a set of labels to have a deterministic
 	// hash value.
 	// Therefore we must normalize early in the write path.
-	// See https://github.com/grafana/loki/pull/7355
+	// See https://github.com/agardiman/loki/pull/7355
 	// for more information
 	return labels.NewBuilder(ls).Labels(), nil
 }

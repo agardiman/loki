@@ -10,10 +10,10 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/distributor"
-	"github.com/grafana/loki/v3/pkg/kafka/testkafka"
+	"github.com/agardiman/loki/v3/pkg/distributor"
+	"github.com/agardiman/loki/v3/pkg/kafka/testkafka"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 )
 
 func TestPushKafkaRecords(t *testing.T) {

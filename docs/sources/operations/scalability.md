@@ -8,7 +8,7 @@ weight:
 
 When scaling Loki, operators should consider running several Loki processes
 partitioned by role (ingester, distributor, querier) rather than a single Loki
-process. Grafana Labs' [production setup](https://github.com/grafana/loki/blob/main/production/ksonnet/loki)
+process. Grafana Labs' [production setup](https://github.com/agardiman/loki/blob/main/production/ksonnet/loki)
 contains `.libsonnet` files that demonstrates configuring separate components
 and scaling for resource usage.
 
@@ -31,7 +31,7 @@ Configure memory ballast using the ballast_bytes configuration option.
 
 ## Remote rule evaluation
 
-_This feature was first proposed in [`LID-0002`](https://github.com/grafana/loki/pull/8129); it contains the design decisions
+_This feature was first proposed in [`LID-0002`](https://github.com/agardiman/loki/pull/8129); it contains the design decisions
 which informed the implementation._
 
 By default, the `ruler` component embeds a query engine to evaluate rules. This generally works fine, except when rules

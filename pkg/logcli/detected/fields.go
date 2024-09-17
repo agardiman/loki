@@ -10,8 +10,8 @@ import (
 
 	"github.com/fatih/color"
 
-	"github.com/grafana/loki/v3/pkg/logcli/client"
-	"github.com/grafana/loki/v3/pkg/loghttp"
+	"github.com/agardiman/loki/v3/pkg/logcli/client"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
 )
 
 type FieldsQuery struct {

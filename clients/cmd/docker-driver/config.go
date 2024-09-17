@@ -19,11 +19,11 @@ import (
 	"github.com/prometheus/prometheus/model/relabel"
 	"gopkg.in/yaml.v2"
 
-	"github.com/grafana/loki/v3/clients/pkg/logentry/stages"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/file"
+	"github.com/agardiman/loki/v3/clients/pkg/logentry/stages"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/file"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 const (

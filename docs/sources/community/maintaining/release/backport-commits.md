@@ -17,7 +17,7 @@ Any PRs or commits not on the release branch that you want to include in the rel
 1. Pick a PR that you want to backport to `release-VERSION_PREFIX` branch.
 
 1. Add two labels to the PR. First, one of the `product-approved`, `type/doc` or `type/bug` appropriately. This is to make sure the PRs that are backported are done with right intention. Second `backport release-VERSION_PREFIX` label.
-   Now CI should automatically create backport PR to the correct release branch. Example [PR](https://github.com/grafana/loki/pull/10333)
+   Now CI should automatically create backport PR to the correct release branch. Example [PR](https://github.com/agardiman/loki/pull/10333)
 
 	{{% admonition type="note" %}}
 	CI automation can fail sometimes if there are some merge conflicts in cherry picking the commits. In those cases, the original PR where you added the label should have additional comment explaining how to backport it manually.

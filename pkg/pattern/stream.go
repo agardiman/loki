@@ -7,9 +7,9 @@ import (
 
 	"github.com/go-kit/log"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/pattern/drain"
-	"github.com/grafana/loki/v3/pkg/pattern/iter"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/pattern/drain"
+	"github.com/agardiman/loki/v3/pkg/pattern/iter"
 
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"

@@ -13,10 +13,10 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/storage/bloom/v1/filter"
-	"github.com/grafana/loki/v3/pkg/util/mempool"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/storage/bloom/v1/filter"
+	"github.com/agardiman/loki/v3/pkg/util/mempool"
 )
 
 var BloomPagePool = mempool.New("test", []mempool.Bucket{

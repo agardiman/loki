@@ -3,8 +3,8 @@ package iter
 import (
 	"errors"
 
-	v2 "github.com/grafana/loki/v3/pkg/iter/v2"
-	"github.com/grafana/loki/v3/pkg/logproto"
+	v2 "github.com/agardiman/loki/v3/pkg/iter/v2"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 type logprotoType interface {

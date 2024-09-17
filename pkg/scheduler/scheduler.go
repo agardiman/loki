@@ -27,15 +27,15 @@ import (
 	"go.uber.org/atomic"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/lokifrontend/frontend/v2/frontendv2pb"
-	"github.com/grafana/loki/v3/pkg/querier/queryrange"
-	"github.com/grafana/loki/v3/pkg/queue"
-	"github.com/grafana/loki/v3/pkg/scheduler/limits"
-	"github.com/grafana/loki/v3/pkg/scheduler/schedulerpb"
-	"github.com/grafana/loki/v3/pkg/util"
-	lokigrpc "github.com/grafana/loki/v3/pkg/util/httpgrpc"
-	lokihttpreq "github.com/grafana/loki/v3/pkg/util/httpreq"
-	lokiring "github.com/grafana/loki/v3/pkg/util/ring"
+	"github.com/agardiman/loki/v3/pkg/lokifrontend/frontend/v2/frontendv2pb"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange"
+	"github.com/agardiman/loki/v3/pkg/queue"
+	"github.com/agardiman/loki/v3/pkg/scheduler/limits"
+	"github.com/agardiman/loki/v3/pkg/scheduler/schedulerpb"
+	"github.com/agardiman/loki/v3/pkg/util"
+	lokigrpc "github.com/agardiman/loki/v3/pkg/util/httpgrpc"
+	lokihttpreq "github.com/agardiman/loki/v3/pkg/util/httpreq"
+	lokiring "github.com/agardiman/loki/v3/pkg/util/ring"
 )
 
 const (

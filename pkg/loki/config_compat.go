@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/grafana/loki/v3/pkg/ingester/index"
-	frontend "github.com/grafana/loki/v3/pkg/lokifrontend/frontend/v2"
-	"github.com/grafana/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/ingester/index"
+	frontend "github.com/agardiman/loki/v3/pkg/lokifrontend/frontend/v2"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
 )
 
 func ValidateConfigCompatibility(c Config) []error {

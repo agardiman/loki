@@ -9,7 +9,7 @@ import (
 	"github.com/grafana/dskit/user"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 func TestDeleteRequestHandlerDeletionMiddleware(t *testing.T) {

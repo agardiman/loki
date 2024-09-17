@@ -13,13 +13,13 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/model/labels"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	"github.com/grafana/loki/v3/pkg/distributor/writefailures"
-	"github.com/grafana/loki/v3/pkg/loghttp/push"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/wal"
-	"github.com/grafana/loki/v3/pkg/util/flagext"
-	"github.com/grafana/loki/v3/pkg/validation"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/distributor/writefailures"
+	"github.com/agardiman/loki/v3/pkg/loghttp/push"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/wal"
+	"github.com/agardiman/loki/v3/pkg/util/flagext"
+	"github.com/agardiman/loki/v3/pkg/validation"
 )
 
 var ErrEntriesExist = errors.New("duplicate push - entries already exist")

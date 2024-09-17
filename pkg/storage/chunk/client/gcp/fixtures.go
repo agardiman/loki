@@ -13,11 +13,11 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/hedging"
-	"github.com/grafana/loki/v3/pkg/storage/chunk/client/testutils"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/hedging"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/client/testutils"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
 )
 
 const (
@@ -52,7 +52,7 @@ func (f *fixture) Clients() (
 	/*
 		// Note: fake-gcs-server upgrade does not work in the `dist` tooling builds.
 		// Leave at v1.7.0 until the issue is resolved.
-		// Example failure: https://github.com/grafana/loki/actions/runs/10744853958/job/29802951861
+		// Example failure: https://github.com/agardiman/loki/actions/runs/10744853958/job/29802951861
 		// Open issue: https://github.com/fsouza/fake-gcs-server/issues/1739
 		// Once the issue is resolved, this code block can be used to replace the
 		// `CreateBucket` call below.

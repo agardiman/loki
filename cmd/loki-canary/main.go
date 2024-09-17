@@ -18,10 +18,10 @@ import (
 	"github.com/prometheus/common/config"
 	"github.com/prometheus/common/version"
 
-	"github.com/grafana/loki/v3/pkg/canary/comparator"
-	"github.com/grafana/loki/v3/pkg/canary/reader"
-	"github.com/grafana/loki/v3/pkg/canary/writer"
-	_ "github.com/grafana/loki/v3/pkg/util/build"
+	"github.com/agardiman/loki/v3/pkg/canary/comparator"
+	"github.com/agardiman/loki/v3/pkg/canary/reader"
+	"github.com/agardiman/loki/v3/pkg/canary/writer"
+	_ "github.com/agardiman/loki/v3/pkg/util/build"
 )
 
 const (

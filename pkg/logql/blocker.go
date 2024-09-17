@@ -8,9 +8,9 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/grafana/regexp"
 
-	"github.com/grafana/loki/v3/pkg/util"
-	logutil "github.com/grafana/loki/v3/pkg/util/log"
-	"github.com/grafana/loki/v3/pkg/util/validation"
+	"github.com/agardiman/loki/v3/pkg/util"
+	logutil "github.com/agardiman/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/util/validation"
 )
 
 type queryBlocker struct {

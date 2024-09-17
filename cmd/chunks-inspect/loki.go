@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
 )
 
 type Block struct {

@@ -13,8 +13,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/grafana/loki/v3/pkg/loki"
-	"github.com/grafana/loki/v3/tools/doc-generator/parse"
+	"github.com/agardiman/loki/v3/pkg/loki"
+	"github.com/agardiman/loki/v3/tools/doc-generator/parse"
 	"golang.org/x/exp/slices"
 )
 

@@ -14,17 +14,17 @@ import (
 	"github.com/go-kit/log/level"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/grafana/loki/v3/clients/pkg/logentry/stages"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/client"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/config"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/server"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/targets/target"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/utils"
-	"github.com/grafana/loki/v3/clients/pkg/promtail/wal"
+	"github.com/agardiman/loki/v3/clients/pkg/logentry/stages"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/client"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/config"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/server"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/targets/target"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/utils"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/wal"
 
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 )
 
 const (

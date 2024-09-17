@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/raft"
 	"google.golang.org/grpc/health/grpc_health_v1"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/health"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/health"
 )
 
 type HealthObserver struct {

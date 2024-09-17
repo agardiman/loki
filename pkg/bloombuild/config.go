@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/grafana/loki/v3/pkg/bloombuild/builder"
-	"github.com/grafana/loki/v3/pkg/bloombuild/planner"
+	"github.com/agardiman/loki/v3/pkg/bloombuild/builder"
+	"github.com/agardiman/loki/v3/pkg/bloombuild/planner"
 )
 
 // Config configures the bloom-planner component.

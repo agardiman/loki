@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/manifests/openshift"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/manifests/openshift"
 )
 
 func TestBuild_StaticMode(t *testing.T) {

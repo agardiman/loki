@@ -10,10 +10,10 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/chunkenc"
-	ingesterclient "github.com/grafana/loki/v3/pkg/ingester/client"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/chunk"
+	"github.com/agardiman/loki/v3/pkg/chunkenc"
+	ingesterclient "github.com/agardiman/loki/v3/pkg/ingester/client"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk"
 )
 
 // unsafeGetString is like yolostring but with a meaningful name

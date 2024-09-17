@@ -9,8 +9,8 @@ import (
 
 	ot "github.com/opentracing/opentracing-go"
 
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
-	"github.com/grafana/loki/v3/pkg/util/math"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
+	"github.com/agardiman/loki/v3/pkg/util/math"
 )
 
 // DoSingleQuery is the interface for indexes that don't support batching yet.

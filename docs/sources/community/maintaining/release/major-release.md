@@ -44,4 +44,4 @@ To create a major release workflow, follow the steps below.
 Once this new workflow is created there is a bit of a race condition with the patch workflow. This can be resolved in 1 of 2 ways:
 
 1. Disable the patch release workflow until after the major release is complete.
-1. Watch all actions for the release branch (ie. <https://github.com/grafana/loki/actions?query=branch%3Arelease-3.0.x>) and cancel and patch release runs.
+1. Watch all actions for the release branch (ie. <https://github.com/agardiman/loki/actions?query=branch%3Arelease-3.0.x>) and cancel and patch release runs.

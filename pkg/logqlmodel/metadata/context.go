@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/grafana/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
+	"github.com/agardiman/loki/v3/pkg/querier/queryrange/queryrangebase/definitions"
 )
 
 type (

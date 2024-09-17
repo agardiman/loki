@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	v1 "github.com/grafana/loki/v3/pkg/storage/bloom/v1"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	v1 "github.com/agardiman/loki/v3/pkg/storage/bloom/v1"
 )
 
 func TestExtractLabelMatchers(t *testing.T) {

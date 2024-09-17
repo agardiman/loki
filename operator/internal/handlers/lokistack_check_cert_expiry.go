@@ -8,11 +8,11 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	configv1 "github.com/grafana/loki/operator/apis/config/v1"
-	lokiv1 "github.com/grafana/loki/operator/apis/loki/v1"
-	"github.com/grafana/loki/operator/internal/certrotation"
-	"github.com/grafana/loki/operator/internal/external/k8s"
-	"github.com/grafana/loki/operator/internal/handlers/internal/certificates"
+	configv1 "github.com/agardiman/loki/operator/apis/config/v1"
+	lokiv1 "github.com/agardiman/loki/operator/apis/loki/v1"
+	"github.com/agardiman/loki/operator/internal/certrotation"
+	"github.com/agardiman/loki/operator/internal/external/k8s"
+	"github.com/agardiman/loki/operator/internal/handlers/internal/certificates"
 )
 
 // CheckCertExpiry handles the case if the LokiStack managed signing CA, client and/or serving

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grafana/loki/v3/pkg/storage/chunk/cache"
-	"github.com/grafana/loki/v3/pkg/storage/config"
-	"github.com/grafana/loki/v3/pkg/storage/types"
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/storage/chunk/cache"
+	"github.com/agardiman/loki/v3/pkg/storage/config"
+	"github.com/agardiman/loki/v3/pkg/storage/types"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 func validateBackendAndLegacyReadMode(c *Config) []error {

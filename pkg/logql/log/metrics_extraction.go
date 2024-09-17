@@ -200,7 +200,7 @@ func (l *streamLabelSampleExtractor) Process(ts int64, line []byte, structuredMe
 	stringValue, _ := l.builder.Get(l.labelName)
 	if stringValue == "" {
 		// NOTE: It's totally fine for log line to not have this particular label.
-		// See Issue: https://github.com/grafana/loki/issues/6713
+		// See Issue: https://github.com/agardiman/loki/issues/6713
 		return 0, nil, false
 	}
 

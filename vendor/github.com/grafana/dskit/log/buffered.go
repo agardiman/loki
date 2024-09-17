@@ -1,4 +1,4 @@
-// Provenance-includes-location: https://github.com/grafana/loki/blob/7c78d7ea44afb420847255f9f5a4f677ad0f47bf/pkg/util/log/line_buffer.go
+// Provenance-includes-location: https://github.com/agardiman/loki/blob/7c78d7ea44afb420847255f9f5a4f677ad0f47bf/pkg/util/log/line_buffer.go
 // Provenance-includes-location: https://github.com/grafana/mimir/blob/c8b24a462f7e224950409e7e0a4e0a58f3a79599/pkg/util/log/line_buffer.go
 // Provenance-includes-copyright: Grafana Labs
 package log

@@ -9,10 +9,10 @@ import (
 	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/model/relabel"
 
-	"github.com/grafana/loki/v3/clients/pkg/promtail/api"
-	lokiClient "github.com/grafana/loki/v3/clients/pkg/promtail/client"
+	"github.com/agardiman/loki/v3/clients/pkg/promtail/api"
+	lokiClient "github.com/agardiman/loki/v3/clients/pkg/promtail/client"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 // PushMessage is the POST body format sent by GCP PubSub push subscriptions.

@@ -6,7 +6,7 @@ aliases:
 ---
 # Releasing Loki Build Image
 
-The [`loki-build-image`](https://github.com/grafana/loki/blob/main/loki-build-image)
+The [`loki-build-image`](https://github.com/agardiman/loki/blob/main/loki-build-image)
 is the Docker image used to run tests and build Grafana Loki binaries in CI.
 
 The build and publish process of the image is triggered upon a merge to `main`

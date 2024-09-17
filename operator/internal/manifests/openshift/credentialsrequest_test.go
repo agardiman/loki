@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/operator/internal/config"
-	"github.com/grafana/loki/operator/internal/manifests/storage"
+	"github.com/agardiman/loki/operator/internal/config"
+	"github.com/agardiman/loki/operator/internal/manifests/storage"
 )
 
 func TestBuildCredentialsRequest_HasSecretRef_MatchingLokiStackNamespace(t *testing.T) {

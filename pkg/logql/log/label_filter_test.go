@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/loki/v3/pkg/logqlmodel"
+	"github.com/agardiman/loki/v3/pkg/logqlmodel"
 )
 
 func TestBinary_Filter(t *testing.T) {
@@ -324,7 +324,7 @@ func TestReduceAndLabelFilter(t *testing.T) {
 }
 
 func TestStringLabelFilter(t *testing.T) {
-	// NOTE: https://github.com/grafana/loki/issues/6713
+	// NOTE: https://github.com/agardiman/loki/issues/6713
 
 	tests := []struct {
 		name        string

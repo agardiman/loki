@@ -17,9 +17,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
-	"github.com/grafana/loki/v3/pkg/ingester-rf1/objstore"
-	"github.com/grafana/loki/v3/pkg/util/test"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	"github.com/agardiman/loki/v3/pkg/ingester-rf1/objstore"
+	"github.com/agardiman/loki/v3/pkg/util/test"
 )
 
 func TestPreparePartitionDownscaleHandler(t *testing.T) {

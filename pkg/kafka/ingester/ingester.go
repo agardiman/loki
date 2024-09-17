@@ -19,12 +19,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"google.golang.org/grpc/health/grpc_health_v1"
 
-	"github.com/grafana/loki/v3/pkg/kafka"
-	"github.com/grafana/loki/v3/pkg/kafka/ingester/shutdownmarker"
-	"github.com/grafana/loki/v3/pkg/kafka/partitionring"
-	util_log "github.com/grafana/loki/v3/pkg/util/log"
+	"github.com/agardiman/loki/v3/pkg/kafka"
+	"github.com/agardiman/loki/v3/pkg/kafka/ingester/shutdownmarker"
+	"github.com/agardiman/loki/v3/pkg/kafka/partitionring"
+	util_log "github.com/agardiman/loki/v3/pkg/util/log"
 
-	"github.com/grafana/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util"
 )
 
 const (

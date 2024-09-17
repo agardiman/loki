@@ -12,7 +12,7 @@ import (
 
 	"github.com/go-kit/log/level"
 
-	"github.com/grafana/loki/pkg/push"
+	"github.com/agardiman/loki/pkg/push"
 
 	"github.com/dustin/go-humanize"
 	"github.com/go-kit/log"
@@ -20,16 +20,16 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/prometheus/model/labels"
 
-	loki_util "github.com/grafana/loki/v3/pkg/util"
+	loki_util "github.com/agardiman/loki/v3/pkg/util"
 
-	"github.com/grafana/loki/v3/pkg/analytics"
-	"github.com/grafana/loki/v3/pkg/loghttp"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/logql/syntax"
-	"github.com/grafana/loki/v3/pkg/util"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/util/unmarshal"
-	unmarshal2 "github.com/grafana/loki/v3/pkg/util/unmarshal/legacy"
+	"github.com/agardiman/loki/v3/pkg/analytics"
+	"github.com/agardiman/loki/v3/pkg/loghttp"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logql/syntax"
+	"github.com/agardiman/loki/v3/pkg/util"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/util/unmarshal"
+	unmarshal2 "github.com/agardiman/loki/v3/pkg/util/unmarshal/legacy"
 )
 
 var (

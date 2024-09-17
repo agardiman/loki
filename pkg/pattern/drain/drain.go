@@ -32,7 +32,7 @@ import (
 	"github.com/hashicorp/golang-lru/v2/simplelru"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/logproto"
 )
 
 type Config struct {

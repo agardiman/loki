@@ -9,7 +9,7 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"go.etcd.io/bbolt"
 
-	metastorepb "github.com/grafana/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
+	metastorepb "github.com/agardiman/loki/v3/pkg/ingester-rf1/metastore/metastorepb"
 )
 
 type metastoreState struct {

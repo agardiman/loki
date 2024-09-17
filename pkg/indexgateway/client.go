@@ -26,12 +26,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	"github.com/grafana/loki/v3/pkg/distributor/clientpool"
-	"github.com/grafana/loki/v3/pkg/logproto"
-	"github.com/grafana/loki/v3/pkg/storage/stores/series/index"
-	"github.com/grafana/loki/v3/pkg/util/constants"
-	"github.com/grafana/loki/v3/pkg/util/discovery"
-	util_math "github.com/grafana/loki/v3/pkg/util/math"
+	"github.com/agardiman/loki/v3/pkg/distributor/clientpool"
+	"github.com/agardiman/loki/v3/pkg/logproto"
+	"github.com/agardiman/loki/v3/pkg/storage/stores/series/index"
+	"github.com/agardiman/loki/v3/pkg/util/constants"
+	"github.com/agardiman/loki/v3/pkg/util/discovery"
+	util_math "github.com/agardiman/loki/v3/pkg/util/math"
 )
 
 const (

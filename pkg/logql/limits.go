@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/grafana/loki/v3/pkg/util/validation"
+	"github.com/agardiman/loki/v3/pkg/util/validation"
 )
 
 var (
